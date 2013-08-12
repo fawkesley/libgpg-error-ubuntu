@@ -19,11 +19,6 @@ override_dh_auto_configure:
 	    --infodir=\$${prefix}/share/info \
 	    --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
 
-override_dh_link:
-	dh_link
-	dh_link -plibgpg-error-dev usr/lib/$(DEB_HOST_MULTIARCH)/libgpg-error.so.0 \
-	                           usr/lib/$(DEB_HOST_MULTIARCH)/libgpg-error.so
-
 override_dh_install:
 	dh_install --list-missing
 
