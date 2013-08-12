@@ -1,6 +1,6 @@
-libgpg-error (1.12-0.1) UNRELEASED; urgency=low
+libgpg-error (1.12-0.1) unstable; urgency=low
 
-  * Non-maintainer upload.
+  * NMU
   * New upstream release (closes: #711995).
   * debian/clean, debian/*.dirs: Removed unused file.
   * debian/control: Added generic Vcs-Browser and Vcs-Svn.
@@ -13,13 +13,13 @@ libgpg-error (1.12-0.1) UNRELEASED; urgency=low
     and dropped sed stuff.
   * debian/libgpg-error0.symbols: Added.
   * debian/libgpg-error-dev.links.in: Put into debian/rules.
-  * debian/rules: Rewritten for dh 7+. Enabled hardening.
+  * debian/rules: Rewritten for dh 7+. Enabled hardening. Dropped linking.
   * debian/watch: Minor update.
   * debian/patches/: Removed patches and dpatch leftovers (closes: #689604).
   * debian/patches/l10n_update.patch: Dropped (shipped with new release).
   * debian/patches/series: Emptied.
 
- -- Daniel Leidert <dleidert@debian.org>  Sat, 18 May 2013 16:14:09 +0200
+ -- Daniel Leidert <dleidert@debian.org>  Mon, 12 Aug 2013 22:49:55 +0200
 
 libgpg-error (1.10-3.1) unstable; urgency=low
 
