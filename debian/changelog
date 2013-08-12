@@ -3,7 +3,7 @@ libgpg-error (1.12-0.1) UNRELEASED; urgency=low
   * Non-maintainer upload.
   * New upstream release (closes: #711995).
   * debian/clean, debian/*.dirs: Removed unused file.
-  * debian/control: Added Vcs-Browser and Vcs-Svn.
+  * debian/control: Added generic Vcs-Browser and Vcs-Svn.
     (Standards-Version): Bumped to 3.9.4.
     (Build-Depends): Added versioned autotools-dev (closes: #689621).
   * debian/copyright: Updated.
@@ -11,6 +11,7 @@ libgpg-error (1.12-0.1) UNRELEASED; urgency=low
     debian/rules.
   * debian/libgpg-error0.install.in: Renamed to debian/libgpg-error0.install
     and dropped sed stuff.
+  * debian/libgpg-error0.symbols: Added.
   * debian/libgpg-error-dev.links.in: Put into debian/rules.
   * debian/rules: Rewritten for dh 7+. Enabled hardening.
   * debian/watch: Minor update.
