@@ -1,7 +1,7 @@
 libgpg-error (1.12-0.1) UNRELEASED; urgency=low
 
   * Non-maintainer upload.
-  * New upstream release.
+  * New upstream release (closes: #711995).
   * debian/clean, debian/*.dirs: Removed unused file.
   * debian/control: Added Vcs-Browser and Vcs-Svn.
     (Standards-Version): Bumped to 3.9.4.
