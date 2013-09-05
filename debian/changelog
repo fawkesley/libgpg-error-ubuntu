@@ -1,3 +1,9 @@
+libgpg-error (1.12-0.3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Daniel Leidert <dleidert@debian.org>  Thu, 05 Sep 2013 22:37:33 +0200
+
 libgpg-error (1.12-0.2) unstable; urgency=low
 
   * NMU
