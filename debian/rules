@@ -17,7 +17,7 @@ override_dh_auto_configure:
 	    --enable-static \
 	    --disable-rpath \
 	    --infodir=\$${prefix}/share/info \
-	    --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
+	    --libdir=/lib/$(DEB_HOST_MULTIARCH)
 
 override_dh_install:
 	dh_install --list-missing
