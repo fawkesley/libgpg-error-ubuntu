@@ -19,6 +19,10 @@ override_dh_auto_configure:
 	    --infodir=\$${prefix}/share/info \
 	    --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
 
+override_dh_auto_build:
+	dh_auto_build --with autotools-dev --parallel
+	tail -vn+0 src/lock-obj-pub.native.h
+
 override_dh_clean:
 	dh_clean debian/libgpg-error0.install
 

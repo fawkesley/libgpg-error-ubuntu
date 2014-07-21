@@ -1,3 +1,11 @@
+libgpg-error (1.13-0.2) unstable; urgency=medium
+
+  * NMU
+  * print arch-specific lock-obj code after successful build (as a step
+    toward dealing with #753047)
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Sun, 20 Jul 2014 23:46:49 -0400
+
 libgpg-error (1.13-0.1) unstable; urgency=low
 
   * NMU
