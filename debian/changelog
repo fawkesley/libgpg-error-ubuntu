@@ -1,10 +1,17 @@
-libgpg-error (1.13-0.3) unstable; urgency=medium
+libgpg-error (1.13-0.4) unstable; urgency=medium
 
   * NMU
   * include arch-specific lock-obj code as accepted by upstream (another
     step toward dealing with #753047)
 
  -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 04 Aug 2014 17:00:45 -0400
+
+libgpg-error (1.13-0.3) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Use dh-autoreconf instead of autotools-dev. Closes: #749522.
+ 
+ -- Matthias Klose <doko@debian.org>  Mon, 04 Aug 2014 11:12:08 +0200
 
 libgpg-error (1.13-0.2) unstable; urgency=medium
 
