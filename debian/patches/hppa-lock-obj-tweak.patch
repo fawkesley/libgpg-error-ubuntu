@@ -1,0 +1,43 @@
+commit 66b69f72ab8706eefbcd49b5a62e6e56d9053f3c
+Author: Daniel Kahn Gillmor <dkg@fifthhorseman.net>
+Date:   Tue Aug 5 09:30:38 2014 -0400
+
+    Fix struct alignment on hppa-linux
+    
+    As reported by John David Anglin <dave.anglin@bell.net>:
+    
+    libgpg-error fails to build on hppa because the t-lock test fails.
+    The test fails because the _gpgrt_lock_t and gpgrt_lock_t objects have
+    different sizes.  This happens becuase the pthread_mutex_t type on
+    hppa-linux has 16-byte alignement, but the code in
+    gen-posix-lock-obj.c assumes that a long or pointer to long will
+    provide sufficient alignment.
+    
+    (see https://bugs.debian.org/757060)
+
+diff --git a/src/gen-posix-lock-obj.c b/src/gen-posix-lock-obj.c
+index df732c3..faba83e 100644
+--- a/src/gen-posix-lock-obj.c
++++ b/src/gen-posix-lock-obj.c
+@@ -76,6 +76,9 @@ main (void)
+           "  long _vers;\n"
+           "  union {\n"
+           "    volatile char _priv[%d];\n"
++#if defined(__hppa__) && defined(__linux__)
++          "    int __lock __attribute__ ((aligned(16)));\n"
++#endif
+           "    long _x_align;\n"
+           "    long *_xp_align;\n"
+           "  } u;\n"
+diff --git a/src/syscfg/lock-obj-pub.hppa-unknown-linux-gnu.h b/src/syscfg/lock-obj-pub.hppa-unknown-linux-gnu.h
+index fd47664..7758604 100644
+--- a/src/syscfg/lock-obj-pub.hppa-unknown-linux-gnu.h
++++ b/src/syscfg/lock-obj-pub.hppa-unknown-linux-gnu.h
+@@ -7,6 +7,7 @@ typedef struct
+   long _vers;
+   union {
+     volatile char _priv[48];
++    int __lock __attribute__ ((aligned(16)));
+     long _x_align;
+     long *_xp_align;
+   } u;
