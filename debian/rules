@@ -7,6 +7,7 @@ export CFLAGS   := $(shell dpkg-buildflags --get CFLAGS)
 export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS)
 export LDFLAGS  := $(shell dpkg-buildflags --get LDFLAGS)
 
+export DEB_BUILD_MULTIARCH ?= $(shell dpkg-architecture -qDEB_BUILD_MULTIARCH)
 export DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 %:
@@ -21,7 +22,9 @@ override_dh_auto_configure:
 
 override_dh_auto_build:
 	dh_auto_build --with autotools-dev --parallel
+ifeq ($(DEB_HOST_MULTIARCH),$(DEB_BUILD_MULTIARCH))
 	tail -vn+0 src/lock-obj-pub.native.h
+endif
 
 override_dh_clean:
 	dh_clean debian/libgpg-error0.install

@@ -1,3 +1,11 @@
+libgpg-error (1.13-3) UNRELEASED; urgency=medium
+
+  * Avoid dumping the native lock-obj header when cross-building, since it
+    will not exist.  I think this resolves the FTCBFS issue.  Thanks to
+    Helmut Grohne for all the useful guidance! (Closes: #753047)
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Thu, 07 Aug 2014 21:32:09 -0400
+
 libgpg-error (1.13-2) unstable; urgency=medium
 
   * adopt upstream's variant of the hppa tuning.
