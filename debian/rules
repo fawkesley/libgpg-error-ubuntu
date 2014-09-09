@@ -21,7 +21,7 @@ override_dh_auto_configure:
 	    --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
 
 override_dh_auto_build:
-	dh_auto_build --with autoreconf --parallel
+	dh_auto_build --parallel
 ifeq ($(DEB_HOST_MULTIARCH),$(DEB_BUILD_MULTIARCH))
 	tail -vn+0 src/lock-obj-pub.native.h
 endif
