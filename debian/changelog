@@ -1,6 +1,7 @@
 libgpg-error (1.13-5) unstable; urgency=medium
 
   * move to debhelper 9
+  * complete move from dh_autotools-dev to dh_autoreconf
 
  -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 09 Sep 2014 14:36:55 -0400
 
