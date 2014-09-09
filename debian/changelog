@@ -1,7 +1,9 @@
-libgpg-error (1.13-5) unstable; urgency=medium
+libgpg-error (1.14-1) unstable; urgency=medium
 
+  * New upstream release
   * move to debhelper 9
   * complete move from dh_autotools-dev to dh_autoreconf
+  * drop all debian/patches -- applied upstream
 
  -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 09 Sep 2014 14:36:55 -0400
 
