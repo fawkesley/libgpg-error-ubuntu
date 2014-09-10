@@ -6,6 +6,7 @@ libgpg-error (1.14-1) unstable; urgency=medium
   * drop all debian/patches -- applied upstream
   * update the text of gpg-error-config.1, since it has not been called
     libgpg-error-config for years
+  * debian/copyright: use DEP5 
 
  -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 09 Sep 2014 14:36:55 -0400
 
