@@ -8,6 +8,7 @@ libgpg-error (1.14-1) unstable; urgency=medium
     libgpg-error-config for years
   * update gpg-error-config to mention --mt
   * debian/copyright: use DEP5 
+  * adopt new symbol visibility (GPG_ERROR_1.0) from upstream
 
  -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 09 Sep 2014 14:36:55 -0400
 
