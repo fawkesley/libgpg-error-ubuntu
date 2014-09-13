@@ -9,6 +9,7 @@ libgpg-error (1.15-1) unstable; urgency=medium
   * update gpg-error-config to mention --mt
   * debian/copyright: use DEP5 
   * adopt new symbol visibility (GPG_ERROR_1.0) from upstream
+  * fix locking problem at close with patch from upstream
 
  -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 09 Sep 2014 14:36:55 -0400
 
