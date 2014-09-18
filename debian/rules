@@ -26,9 +26,6 @@ ifeq ($(DEB_HOST_MULTIARCH),$(DEB_BUILD_MULTIARCH))
 	tail -vn+0 src/lock-obj-pub.native.h
 endif
 
-override_dh_clean:
-	dh_clean debian/libgpg-error0.install
-
 override_dh_install:
 	sed -e"s,@DEB_HOST_MULTIARCH@,${DEB_HOST_MULTIARCH},g" \
 	    debian/libgpg-error0.install.in > debian/libgpg-error0.install
