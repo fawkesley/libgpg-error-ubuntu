@@ -1,0 +1,49 @@
+From cd1ffdb493e74dfade411cde9ec269964be2b566 Mon Sep 17 00:00:00 2001
+From: Daniel Kahn Gillmor <dkg@fifthhorseman.net>
+Date: Mon, 22 Sep 2014 15:42:36 -0400
+Subject: [PATCH 2/2] add
+ src/syscfg/lock-obj-pub.powerpc64el-unknown-linux-gnu.h
+
+Here is a arch-specific lock-obj header file for little-endian 64-bit
+powerpc.
+
+Debian-bug-id: 762322
+---
+ .../lock-obj-pub.powerpc64el-unknown-linux-gnu.h   | 25 ++++++++++++++++++++++
+ 1 file changed, 25 insertions(+)
+ create mode 100644 src/syscfg/lock-obj-pub.powerpc64el-unknown-linux-gnu.h
+
+diff --git a/src/syscfg/lock-obj-pub.powerpc64el-unknown-linux-gnu.h b/src/syscfg/lock-obj-pub.powerpc64el-unknown-linux-gnu.h
+new file mode 100644
+index 0000000..79073d4
+--- /dev/null
++++ b/src/syscfg/lock-obj-pub.powerpc64el-unknown-linux-gnu.h
+@@ -0,0 +1,25 @@
++## lock-obj-pub.powerpc64le-unknown-linux-gnu.h
++## File created by gen-posix-lock-obj - DO NOT EDIT
++## To be included by mkheader into gpg-error.h
++
++typedef struct
++{
++  long _vers;
++  union {
++    volatile char _priv[40];
++    long _x_align;
++    long *_xp_align;
++  } u;
++} gpgrt_lock_t;
++
++#define GPGRT_LOCK_INITIALIZER {1,{{0,0,0,0,0,0,0,0, \
++                                    0,0,0,0,0,0,0,0, \
++                                    0,0,0,0,0,0,0,0, \
++                                    0,0,0,0,0,0,0,0, \
++                                    0,0,0,0,0,0,0,0}}}
++##
++## Local Variables:
++## mode: c
++## buffer-read-only: t
++## End:
++##
+-- 
+2.1.0
+

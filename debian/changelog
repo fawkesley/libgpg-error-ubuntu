@@ -1,3 +1,9 @@
+libgpg-error (1.16-2) unstable; urgency=medium
+
+  * added header for powerpc64el (addresses: #762322)
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 22 Sep 2014 15:52:35 -0400
+
 libgpg-error (1.16-1) unstable; urgency=medium
 
   * New upstream release
