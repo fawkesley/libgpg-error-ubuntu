@@ -1,0 +1,46 @@
+From 7f6e6785a9f2a4fa141cd37206e8e06de5f19043 Mon Sep 17 00:00:00 2001
+From: Daniel Kahn Gillmor <dkg@fifthhorseman.net>
+Date: Mon, 22 Sep 2014 15:28:38 -0400
+Subject: [PATCH 1/2] Allow ./configure to explicitly set libgpg-error's build
+ timestamp
+
+A group within Debian is working on making the archive rebuildable in
+a reproducible way, so that the compiled binary outputs are
+byte-for-byte identical when built for the same platform using the
+same toolchain.  This is useful in providing auditability and
+corroboration for users of the operating system.
+
+libgpg-error is very close to reproducible except for embedding the
+build timestamp in the generated binary.  This timestamp is set in
+config.h during ./configure.
+
+This patch allows an external build system to set this embedded
+timestamp explicitly, which appears to make the package build
+repeatably when ./configure is called with EXTERNAL_BUILD_TIMESTAMP
+set.
+
+Debian-bug-id: 762397
+---
+ configure.ac | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/configure.ac b/configure.ac
+index b32b751..1093077 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -484,7 +484,11 @@ changequote([,])dnl
+ BUILD_FILEVERSION="${BUILD_FILEVERSION}0,mym4_revision_dec"
+ AC_SUBST(BUILD_FILEVERSION)
+ 
+-BUILD_TIMESTAMP=`date -u +%Y-%m-%dT%H:%M+0000 2>/dev/null || date`
++if test "$EXTERNAL_BUILD_TIMESTAMP" = ''; then
++   BUILD_TIMESTAMP=`date -u +%Y-%m-%dT%H:%M+0000 2>/dev/null || date`
++else
++   BUILD_TIMESTAMP="$EXTERNAL_BUILD_TIMESTAMP"
++fi
+ AC_SUBST(BUILD_TIMESTAMP)
+ AC_DEFINE_UNQUOTED(BUILD_TIMESTAMP, "$BUILD_TIMESTAMP",
+                    [The time this package was configured for a build])
+-- 
+2.1.0
+
