@@ -1,18 +1,34 @@
-From cd1ffdb493e74dfade411cde9ec269964be2b566 Mon Sep 17 00:00:00 2001
+From 33e5504fbb5e5e2ff44023c0a22dfb668ff8b10f Mon Sep 17 00:00:00 2001
 From: Daniel Kahn Gillmor <dkg@fifthhorseman.net>
-Date: Mon, 22 Sep 2014 15:42:36 -0400
-Subject: [PATCH 2/2] add
- src/syscfg/lock-obj-pub.powerpc64el-unknown-linux-gnu.h
+Subject: Add new lock-obj-pub for powerpc64el-unknown-linux-gnu.
+
+* src/syscfg/lock-obj-pub.powerpc64el-unknown-linux-gnu.h: New.
+* src/Makefile.am (lock_obj_pub): Add.
+
+--
 
 Here is a arch-specific lock-obj header file for little-endian 64-bit
 powerpc.
 
 Debian-bug-id: 762322
 ---
+ src/Makefile.am                                    |  1 +
  .../lock-obj-pub.powerpc64el-unknown-linux-gnu.h   | 25 ++++++++++++++++++++++
- 1 file changed, 25 insertions(+)
+ 2 files changed, 26 insertions(+)
  create mode 100644 src/syscfg/lock-obj-pub.powerpc64el-unknown-linux-gnu.h
 
+diff --git a/src/Makefile.am b/src/Makefile.am
+index 10810a6..def0f45 100644
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -57,6 +57,7 @@ lock_obj_pub = \
+         syscfg/lock-obj-pub.mipsel-unknown-linux-gnu.h      \
+         syscfg/lock-obj-pub.powerpc-unknown-linux-gnu.h     \
+         syscfg/lock-obj-pub.powerpc64-unknown-linux-gnu.h   \
++	syscfg/lock-obj-pub.powerpc64el-unknown-linux-gnu.h \
+         syscfg/lock-obj-pub.s390x-ibm-linux-gnu.h           \
+         syscfg/lock-obj-pub.sh4-unknown-linux-gnu.h         \
+         syscfg/lock-obj-pub.sparc-unknown-linux-gnu.h       \
 diff --git a/src/syscfg/lock-obj-pub.powerpc64el-unknown-linux-gnu.h b/src/syscfg/lock-obj-pub.powerpc64el-unknown-linux-gnu.h
 new file mode 100644
 index 0000000..79073d4
