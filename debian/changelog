@@ -1,6 +1,6 @@
 libgpg-error (1.16-2) unstable; urgency=medium
 
-  * added header for powerpc64el (addresses: #762322)
+  * added headers for powerpc64el and sparc64 (Closes: #762322)
   * set external timestamp for build for reproducibility (Closes: #762397)
 
  -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 22 Sep 2014 15:52:35 -0400

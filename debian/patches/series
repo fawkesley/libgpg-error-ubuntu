@@ -1,2 +1,3 @@
 add-powerpc64el.patch
 explicitly-set-build-timestamp.patch
+add-sparc64.patch

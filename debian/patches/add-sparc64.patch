@@ -1,0 +1,70 @@
+From a57281ca17feea041f9c89d1a31a2054b85de3c5 Mon Sep 17 00:00:00 2001
+From: Daniel Kahn Gillmor <dkg@fifthhorseman.net>
+Date: Tue, 23 Sep 2014 11:13:51 -0400
+Subject: [PATCH] Add new lock-obj-pub for sparc64-unknown-linux-gnu.
+
+* src/syscfg/lock-obj-pub.sparc64-unknown-linux-gnu.h: New.
+* src/Makefile.am (lock_obj_pub): Add.
+
+--
+
+Helmut Grohne writes:
+
+Julien Cristau pointed out that sparc porter machines run 64bit kernels
+and can execute 64bit executables. So here we go. I crossed
+gen-posix-lock-obj for sparc64, verified that it is indeed a 64bit
+executable and attach its output.
+
+Debian-bug-id: 762322
+---
+ src/Makefile.am                                    |  1 +
+ .../lock-obj-pub.sparc64-unknown-linux-gnu.h       | 25 ++++++++++++++++++++++
+ 2 files changed, 26 insertions(+)
+ create mode 100644 src/syscfg/lock-obj-pub.sparc64-unknown-linux-gnu.h
+
+diff --git a/src/Makefile.am b/src/Makefile.am
+index def0f45..62579dc 100644
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -61,6 +61,7 @@ lock_obj_pub = \
+         syscfg/lock-obj-pub.s390x-ibm-linux-gnu.h           \
+         syscfg/lock-obj-pub.sh4-unknown-linux-gnu.h         \
+         syscfg/lock-obj-pub.sparc-unknown-linux-gnu.h       \
++        syscfg/lock-obj-pub.sparc64-unknown-linux-gnu.h     \
+         syscfg/lock-obj-pub.x86_64-pc-kfreebsd-gnu.h        \
+         syscfg/lock-obj-pub.x86_64-pc-linux-gnu.h           \
+         syscfg/lock-obj-pub.x86_64-pc-linux-gnux32.h        \
+diff --git a/src/syscfg/lock-obj-pub.sparc64-unknown-linux-gnu.h b/src/syscfg/lock-obj-pub.sparc64-unknown-linux-gnu.h
+new file mode 100644
+index 0000000..ee309a9
+--- /dev/null
++++ b/src/syscfg/lock-obj-pub.sparc64-unknown-linux-gnu.h
+@@ -0,0 +1,25 @@
++## lock-obj-pub.sparc64-unknown-linux-gnu.h
++## File created by gen-posix-lock-obj - DO NOT EDIT
++## To be included by mkheader into gpg-error.h
++
++typedef struct
++{
++  long _vers;
++  union {
++    volatile char _priv[40];
++    long _x_align;
++    long *_xp_align;
++  } u;
++} gpgrt_lock_t;
++
++#define GPGRT_LOCK_INITIALIZER {1,{{0,0,0,0,0,0,0,0, \
++                                    0,0,0,0,0,0,0,0, \
++                                    0,0,0,0,0,0,0,0, \
++                                    0,0,0,0,0,0,0,0, \
++                                    0,0,0,0,0,0,0,0}}}
++##
++## Local Variables:
++## mode: c
++## buffer-read-only: t
++## End:
++##
+-- 
+2.1.0
+
