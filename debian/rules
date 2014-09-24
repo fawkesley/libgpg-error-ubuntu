@@ -21,7 +21,7 @@ override_dh_auto_configure:
 	    --disable-rpath \
 	    --infodir=\$${prefix}/share/info \
 	    --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH) \
-	    EXTERNAL_BUILD_TIMESTAMP=$(shell date --date="$(DEB_DATE)" -u +%Y-%m-%dT%H:%M+0000)
+	    --enable-build-timestamp=$(shell date --date="$(DEB_DATE)" -u +%Y-%m-%dT%H:%M+0000)
 
 override_dh_auto_build:
 	dh_auto_build --parallel
