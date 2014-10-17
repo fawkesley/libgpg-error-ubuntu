@@ -1,6 +1,9 @@
-libgpg-error (1.16-3) unstable; urgency=medium
+libgpg-error (1.17-1) unstable; urgency=medium
 
-  * Correct name for lock-obj for powerpc64le (Closes: #762322)
+  * New upstream release (Closes: #762322)
+    - debian/patches: all merged upstream
+  * added arch-specific lock-obj header for i586-pc-linux-gnu
+    (Closes: #764881)
 
  -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 29 Sep 2014 11:39:00 -0400
 
