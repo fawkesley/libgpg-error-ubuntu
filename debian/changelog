@@ -4,7 +4,9 @@ libgpg-error (1.17-1) unstable; urgency=medium
     - debian/patches: all merged upstream
   * added arch-specific lock-obj header for i586-pc-linux-gnu
     (Closes: #764881)
-
+  * bumped all symbols to 1.14 since version node GPG_ERROR_1.0 was
+    introduced there. (Closes: #765430)
+ 
  -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 29 Sep 2014 11:39:00 -0400
 
 libgpg-error (1.16-2) unstable; urgency=medium
