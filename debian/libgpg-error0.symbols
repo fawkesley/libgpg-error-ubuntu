@@ -2,6 +2,8 @@ libgpg-error.so.0 libgpg-error0 #MINVER#
  GPG_ERROR_1.0@GPG_ERROR_1.0 1.14
  _gpgrt_get_std_stream@GPG_ERROR_1.0 1.14
  _gpgrt_getc_underflow@GPG_ERROR_1.0 1.14
+ _gpgrt_pending@GPG_ERROR_1.0 1.17
+ _gpgrt_pending_unlocked@GPG_ERROR_1.0 1.17
  _gpgrt_putc_overflow@GPG_ERROR_1.0 1.14
  _gpgrt_set_std_fd@GPG_ERROR_1.0 1.14
  gpg_err_code_from_errno@GPG_ERROR_1.0 1.14
