@@ -7,6 +7,7 @@ libgpg-error (1.17-1) unstable; urgency=medium
   * bumped all symbols to 1.14 since version node GPG_ERROR_1.0 was
     introduced there. (Closes: #765430)
   * use upstream's manpage for gpg-error-config
+  * bump Standards-Version to 3.9.6 (no changes needed)
  
  -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 29 Sep 2014 11:39:00 -0400
 

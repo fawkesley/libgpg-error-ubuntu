@@ -6,7 +6,7 @@ Uploaders: Matthias Urlichs <smurf@debian.org>,
            Daniel Kahn Gillmor <dkg@fifthhorseman.net>
 Priority: standard
 Build-Depends: debhelper (>> 9), dh-autoreconf
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://www.gnupg.org/related_software/libgpg-error/
 Vcs-Git: git://anonscm.debian.org/pkg-gnupg/libgpg-error.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-gnupg/libgpg-error.git
