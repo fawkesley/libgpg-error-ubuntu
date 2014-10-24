@@ -39,3 +39,13 @@ index 0000000..60eadab
 +## buffer-read-only: t
 +## End:
 +##
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -56,6 +56,7 @@
+         syscfg/lock-obj-pub.m68k-unknown-linux-gnu.h        \
+         syscfg/lock-obj-pub.mips-unknown-linux-gnu.h        \
+         syscfg/lock-obj-pub.mipsel-unknown-linux-gnu.h      \
++        syscfg/lock-obj-pub.or1k-unknown-linux-gnu.h        \
+         syscfg/lock-obj-pub.powerpc-unknown-linux-gnu.h     \
+         syscfg/lock-obj-pub.powerpc64-unknown-linux-gnu.h   \
+ 	syscfg/lock-obj-pub.powerpc64le-unknown-linux-gnu.h \
