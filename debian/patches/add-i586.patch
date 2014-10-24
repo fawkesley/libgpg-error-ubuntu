@@ -45,3 +45,13 @@ index 0000000..fc2d132
 +## buffer-read-only: t
 +## End:
 +##
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -52,6 +52,7 @@
+         syscfg/lock-obj-pub.i486-pc-gnu.h                   \
+         syscfg/lock-obj-pub.i486-pc-kfreebsd-gnu.h          \
+         syscfg/lock-obj-pub.i486-pc-linux-gnu.h             \
++        syscfg/lock-obj-pub.i586-pc-linux-gnu.h             \
+         syscfg/lock-obj-pub.m68k-unknown-linux-gnu.h        \
+         syscfg/lock-obj-pub.mips-unknown-linux-gnu.h        \
+         syscfg/lock-obj-pub.mipsel-unknown-linux-gnu.h      \
