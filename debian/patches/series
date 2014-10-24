@@ -1,2 +1,3 @@
 add-i586.patch
 add-or1k.patch
+add-mips64el.patch
