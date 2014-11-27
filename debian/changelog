@@ -1,3 +1,21 @@
+libgpg-error (1.17-3) unstable; urgency=medium
+
+  * Force rebuild of gmo files
+  * Update Polish translation, thanks to Jakub Bogusz
+  * Update French translation
+  * Update Ukrainian translation, thanks to Yuri Chornoivan
+  * Update Danish translation, thanks to Joe Hansen
+  * Update Dutch translation, thanks to Freek de Kruijf
+  * Update Japanese translation, thanks to NIIBE Yutaka
+  * Add Russian translation, thanks to Ineiev
+  * Update Italian translation, thanks to Milo Casagrande
+  * Add Chinese (traditional) translation, thanks to Jedi Lin
+  * Add Portuguese translation, thanks to Paulo Tomé (Closes: #770893)
+  * Add Serbian translation, thanks to Мирослав Николић
+  * Update Czech translation, thanks to Petr Pisar
+
+ -- David Prévot <taffit@debian.org>  Thu, 27 Nov 2014 16:36:56 -0400
+
 libgpg-error (1.17-2) unstable; urgency=medium
 
   * added arch-specific lock-obj header for added
