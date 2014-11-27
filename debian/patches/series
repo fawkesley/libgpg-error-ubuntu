@@ -1,3 +1,4 @@
 add-i586.patch
 add-or1k.patch
 add-mips64el.patch
+0004-Drop-previous-strings-from-PO-files.patch
