@@ -1,5 +1,6 @@
 libgpg-error (1.17-3) unstable; urgency=medium
 
+  [ David Prévot ]
   * Force rebuild of gmo files
   * Update Polish translation, thanks to Jakub Bogusz
   * Update French translation
@@ -14,7 +15,7 @@ libgpg-error (1.17-3) unstable; urgency=medium
   * Add Serbian translation, thanks to Мирослав Николић
   * Update Czech translation, thanks to Petr Pisar
 
- -- David Prévot <taffit@debian.org>  Thu, 27 Nov 2014 16:36:56 -0400
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Fri, 12 Dec 2014 15:55:18 -0500
 
 libgpg-error (1.17-2) unstable; urgency=medium
 
