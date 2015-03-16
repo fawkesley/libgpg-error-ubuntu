@@ -2,6 +2,7 @@ libgpg-error (1.18-1) experimental; urgency=medium
 
   * New Upstream Version
   * debian/patches: dropped most, already applied upstream
+  * avoid breakage with gcc 5 (Closes: #777374)
 
  -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 16 Mar 2015 13:11:35 -0400
 
