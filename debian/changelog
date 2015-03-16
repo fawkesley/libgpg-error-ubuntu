@@ -1,3 +1,10 @@
+libgpg-error (1.18-1) experimental; urgency=medium
+
+  * New Upstream Version
+  * debian/patches: dropped most, already applied upstream
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 16 Mar 2015 13:11:35 -0400
+
 libgpg-error (1.17-3) unstable; urgency=medium
 
   [ David Prévot ]
