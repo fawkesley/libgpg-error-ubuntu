@@ -10,8 +10,6 @@ export LDFLAGS  := $(shell dpkg-buildflags --get LDFLAGS)
 export DEB_BUILD_MULTIARCH ?= $(shell dpkg-architecture -qDEB_BUILD_MULTIARCH)
 export DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
-DEB_DATE = $(shell dpkg-parsechangelog -SDate)
-
 %:
 	dh $@ --with autoreconf --parallel
 
@@ -21,8 +19,7 @@ override_dh_auto_configure:
 	    --enable-static \
 	    --disable-rpath \
 	    --infodir=\$${prefix}/share/info \
-	    --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH) \
-	    --enable-build-timestamp=$(shell date --date="$(DEB_DATE)" -u +%Y-%m-%dT%H:%M+0000)
+	    --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
 
 override_dh_auto_build:
 	dh_auto_build --parallel

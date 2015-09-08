@@ -1,3 +1,10 @@
+libgpg-error (1.20-1) unstable; urgency=medium
+
+  * New upstream release
+  * use new upstream default of no embedding build timestamp
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 08 Sep 2015 01:23:12 -0400
+
 libgpg-error (1.19-2) unstable; urgency=medium
 
   * upload to unstable
