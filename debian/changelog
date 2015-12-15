@@ -1,3 +1,9 @@
+libgpg-error (1.21-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 15 Dec 2015 10:31:10 -0500
+
 libgpg-error (1.20-1) unstable; urgency=medium
 
   * New upstream release
