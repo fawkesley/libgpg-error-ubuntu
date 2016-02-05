@@ -40,3 +40,18 @@ override_dh_makeshlibs:
 
 override_dh_link:
 	dh_link -plibgpg-error-dev lib/$(DEB_HOST_MULTIARCH)/libgpg-error.so.0 usr/lib/$(DEB_HOST_MULTIARCH)/libgpg-error.so
+
+### "arch-independent" Win32 builds: ###
+
+WIN32_FLAGS=LDFLAGS="-Xlinker --no-insert-timestamp" CFLAGS="-g -Os" CPPFLAGS=
+
+override_dh_auto_build-indep:
+	mkdir -p build-win32
+	( cd build-win32 && $(WIN32_FLAGS) ../configure \
+	    --prefix=/usr/share/win32 \
+	    --enable-static \
+	    --host i686-w64-mingw32 )
+	( cd build-win32 && $(WIN32_FLAGS) make )
+
+override_dh_auto_install-indep:
+	( cd build-win32 && $(WIN32_FLAGS) make install DESTDIR=$(shell pwd)/debian/tmp )

@@ -1,0 +1,3 @@
+usr/share/win32/bin/*
+usr/share/win32/include/gpg-error.h
+usr/share/win32/lib/*
