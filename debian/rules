@@ -7,17 +7,20 @@ export DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 override_dh_auto_configure:
 	touch po/libgpg-error.pot
-	dh_auto_configure -- \
+	dh_auto_configure --builddirectory=build -- \
 	    --enable-static \
 	    --disable-rpath \
 	    --infodir=\$${prefix}/share/info \
 	    --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
 
-override_dh_auto_build:
-	dh_auto_build --parallel
+override_dh_auto_build-arch:
+	dh_auto_build --parallel --builddirectory=build
 ifeq ($(DEB_HOST_MULTIARCH),$(DEB_BUILD_MULTIARCH))
-	tail -vn+0 src/lock-obj-pub.native.h
+	tail -vn+0 build/src/lock-obj-pub.native.h
 endif
+
+override_dh_auto_install-arch:
+	dh_auto_install --parallel --builddirectory=build
 
 override_dh_install:
 	sed -e"s,@DEB_HOST_MULTIARCH@,${DEB_HOST_MULTIARCH},g" \
