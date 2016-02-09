@@ -11,7 +11,7 @@ This patch avoids that situation.
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/configure.ac b/configure.ac
-index ec8d112..05b40de 100644
+index a8e09cf..8b83c2c 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -40,7 +40,7 @@ m4_define([mym4_revision_dec],
