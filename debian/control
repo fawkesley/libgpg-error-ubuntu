@@ -51,16 +51,17 @@ Description: library for common error values and messages in GnuPG components
  components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
  pinentry, SmartCard Daemon and possibly more in the future.
 
-Package: libgpg-error-win32
+Package: libgpg-error-mingw-w64-dev
 Architecture: all
 Priority: extra
+Section: libdevel
 Depends: ${misc:Depends}
 Suggests: wine
-Description: library for common error values and messages in GnuPG components (win32 port)
+Description: library of error values and messages in GnuPG (Windows development)
  Library that defines common error values for all GnuPG
  components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
  pinentry, SmartCard Daemon and possibly more in the future.
  .
- This is a win32 version of libgpg-error.  It's meant to be used to
- build static libraries that can be reused by programs included in the
- win32-loader component of Debian-Installer.
+ This is a Windows version of libgpg-error.  It's meant to be used
+ when cross-building software that targets the Windows platform,
+ e.g. the win32-loader component of Debian-Installer.

@@ -1,8 +1,0 @@
-# libgpg-error-win32 is "arch-independent" from debian's perspective,
-# since it ships binaries that are only used during cross-building
-# windows software.
-libgpg-error-win32: arch-independent-package-contains-binary-or-object usr/share/win32/lib/libgpg-error.a
-libgpg-error-win32: arch-dependent-file-in-usr-share usr/share/win32/lib/libgpg-error.a
-libgpg-error-win32: arch-independent-package-contains-binary-or-object usr/share/win32/lib/libgpg-error.dll.a
-libgpg-error-win32: arch-dependent-file-in-usr-share usr/share/win32/lib/libgpg-error.dll.a
-libgpg-error-win32: executable-not-elf-or-script usr/share/win32/bin/libgpg-error-0.dll

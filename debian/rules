@@ -41,17 +41,26 @@ override_dh_makeshlibs:
 override_dh_link:
 	dh_link -plibgpg-error-dev lib/$(DEB_HOST_MULTIARCH)/libgpg-error.so.0 usr/lib/$(DEB_HOST_MULTIARCH)/libgpg-error.so
 
-### "arch-independent" Win32 builds: ###
+### "arch-independent" Windows builds: ###
 
-WIN32_FLAGS=LDFLAGS="-Xlinker --no-insert-timestamp" CFLAGS="-g -Os" CPPFLAGS=
+WIN_FLAGS=LDFLAGS="-Xlinker --no-insert-timestamp" CFLAGS="-g -Os" CPPFLAGS=
 
 override_dh_auto_build-indep:
-	mkdir -p build-win32
-	( cd build-win32 && $(WIN32_FLAGS) ../configure \
-	    --prefix=/usr/share/win32 \
+	for cpu in i686 x86_64; do \
+	 mkdir -p build-$$cpu-w64-mingw32 && \
+	 cd build-$$cpu-w64-mingw32 && $(WIN_FLAGS) ../configure \
+	    --prefix=/usr/$$cpu-w64-mingw32 \
 	    --enable-static \
-	    --host i686-w64-mingw32 )
-	( cd build-win32 && $(WIN32_FLAGS) make )
+	    --host $$cpu-w64-mingw32 && \
+	  $(WIN_FLAGS) $(MAKE) \
+	  || exit 1 ; \
+	  cd .. ; \
+	done
 
 override_dh_auto_install-indep:
-	( cd build-win32 && $(WIN32_FLAGS) make install DESTDIR=$(shell pwd)/debian/tmp )
+	for cpu in i686 x86_64; do \
+	  cd build-$$cpu-w64-mingw32 && \
+	  $(MAKE) install DESTDIR=$(shell pwd)/debian/tmp \
+	  || exit 1 ; \
+	  cd .. ; \
+	done
