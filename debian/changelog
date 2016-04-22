@@ -1,3 +1,10 @@
+libgpg-error (1.21-3) unstable; urgency=medium
+
+  * add cross-compiling headers for several other architectures (Closes:
+    #816240, #812832)
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Fri, 22 Apr 2016 00:51:54 -0400
+
 libgpg-error (1.21-2) unstable; urgency=medium
 
   * build out-of-tree for cleanliness
