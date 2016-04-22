@@ -5,3 +5,4 @@
 0005-Add-syscfg-alias-for-x86_64-pc-linux-gnuhardened1.patch
 0006-fix-Solaris-and-HPPA-this-is-a-collection-of-upstrea.patch
 0007-syscfg-Add-lock-obj-pub-files-for-armv5-armv6-x86_64.patch
+0008-add-syscfg-alias-for-powerpc-unknown-linux-gnuspe.patch
