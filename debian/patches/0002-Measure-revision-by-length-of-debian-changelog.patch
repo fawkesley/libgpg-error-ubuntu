@@ -17,10 +17,10 @@ the git ID.
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/configure.ac b/configure.ac
-index db47ec9..3ec8238 100644
+index 8e71b3c..1933c01 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -35,7 +35,7 @@ m4_define([mym4_version_minor], [22])
+@@ -35,7 +35,7 @@ m4_define([mym4_version_minor], [23])
  # processing is done by autoconf and not during the configure run.
  m4_define([mym4_version], [mym4_version_major.mym4_version_minor])
  m4_define([mym4_revision],
