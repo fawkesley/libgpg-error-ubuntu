@@ -1,3 +1,41 @@
+2016-06-15  Werner Koch  <wk@gnupg.org>
+
+	Release 1.23.
+
+	po: Update German translation.
+
+2016-06-15  Jakub Bogusz  <qboosh@pld-linux.org>
+
+	po: Update Polish translation.
+
+2016-06-15  Werner Koch  <wk@gnupg.org>
+
+	tests: Fix rare deadlock condition in t-poll.
+	* tests/t-poll.c (launch_thread): Use es_fileno before starting the
+	thread.
+
+2016-06-15  NIIBE Yutaka  <gniibe@fsij.org>
+
+	estream: Fix assertion failure due to es_flush.
+	* src/estream.c (es_writen): Set writing flag even if no data was
+	written.
+
+2016-06-15  Werner Koch  <wk@gnupg.org>
+
+	Adjust memory limit of es_fopenmem to the block size.
+	* src/estream.c (func_mem_create): Round up memory limit.
+
+2016-05-17  Werner Koch  <wk@gnupg.org>
+
+	Add GPG_ERR_SUBKEYS_EXP_OR_REV.
+
+2016-05-07  Werner Koch  <wk@gnupg.org>
+
+	syscfg: Add a powerpc and a tilgegx architecture.
+	* src/syscfg/lock-obj-pub.powerpc-unknown-linux-gnuspe.h: New.
+	* src/syscfg/lock-obj-pub.tilegx-unknown-linux-gnu.h: New.
+	* src/Makefile.am (lock_obj_pub): Add them.
+
 2016-04-25  Werner Koch  <wk@gnupg.org>
 
 	Release 1.22.
