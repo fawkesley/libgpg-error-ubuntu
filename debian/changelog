@@ -1,3 +1,9 @@
+libgpg-error (1.24-2) unstable; urgency=medium
+
+  * Drop smurf from uploaders (Closes: #843361)
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Thu, 10 Nov 2016 08:30:48 -0800
+
 libgpg-error (1.24-1) unstable; urgency=medium
 
   * New upstream release
