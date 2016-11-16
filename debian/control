@@ -7,7 +7,7 @@ Uploaders:
 Priority: standard
 Build-Depends:
  automake (>= 1.14),
- debhelper (>> 9),
+ debhelper (>= 10~),
  dh-autoreconf,
  gettext (>= 0.19.3),
 Build-Depends-Indep:
