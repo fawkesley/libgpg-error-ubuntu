@@ -59,6 +59,7 @@ libgpg-error.so.0 libgpg-error0 #MINVER#
  gpgrt_funlockfile@GPG_ERROR_1.0 1.14
  gpgrt_fwrite@GPG_ERROR_1.0 1.14
  gpgrt_get_nonblock@GPG_ERROR_1.0 1.21
+ gpgrt_get_syscall_clamp@GPG_ERROR_1.0 1.25
  gpgrt_getline@GPG_ERROR_1.0 1.14
  gpgrt_lock_destroy@GPG_ERROR_1.0 1.14
  gpgrt_lock_init@GPG_ERROR_1.0 1.14
