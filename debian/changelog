@@ -1,3 +1,9 @@
+libgpg-error (1.25-2) unstable; urgency=medium
+
+  * fix misspellings in error descriptions.
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 05 Dec 2016 16:41:25 -0500
+
 libgpg-error (1.25-1) unstable; urgency=medium
 
   * new upstream version
