@@ -97,4 +97,4 @@ libgpg-error.so.0 libgpg-error0 #MINVER#
  gpgrt_write@GPG_ERROR_1.0 1.14
  gpgrt_write_hexstring@GPG_ERROR_1.0 1.14
  gpgrt_write_sanitized@GPG_ERROR_1.0 1.14
- gpgrt_yield@GPG_ERROR_1.0 1.14
+ gpgrt_yield@GPG_ERROR_1.0 1.25
