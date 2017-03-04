@@ -1,6 +1,6 @@
 This is gpgrt.info, produced by makeinfo version 6.3 from gpgrt.texi.
 
-This manual is for Libgpg-error (version 1.26, 2 December 2016), which
+This manual is for Libgpg-error (version 1.27, 17 January 2017), which
 is a library for code used by all GnuPG related packages.
 
 Copyright (C) 2014 g10 Code GmbH
@@ -22,7 +22,7 @@ File: gpgrt.info,  Node: Top,  Next: Introduction,  Up: (dir)
 The Libgpg-error Library
 ************************
 
-This manual is for Libgpg-error (version 1.26, 2 December 2016), which
+This manual is for Libgpg-error (version 1.27, 17 January 2017), which
 is a library for code used by all GnuPG related packages.
 
 Copyright (C) 2014 g10 Code GmbH
@@ -220,8 +220,8 @@ extension to Automake that does all the work for you.
      first look for the helper program in the 'bin' directory below that
      top directory.  An absolute directory name must be used for
      'SYSROOT'.  Finally, if the configure command line option
-     '--with-gpg-error-prefix' is used, only its value is used for the
-     top directory below which the helper script is expected.
+     '--with-libgpg-error-prefix' is used, only its value is used for
+     the top directory below which the helper script is expected.
 
    You can use the defined Autoconf variables like this in your
 'Makefile.am':
@@ -1249,14 +1249,14 @@ Node: Preparation3307
 Node: Header4108
 Node: Building sources5193
 Node: Building sources using Automake6956
-Node: Initializing the library8898
-Node: Multi-Threading10086
-Node: Generalities10228
-Node: Tools10415
-Node: gpg-error-config10585
-Node: Library Copying12164
-Node: Copying40265
-Node: Concept Index59435
-Node: Function and Data Index59732
+Node: Initializing the library8901
+Node: Multi-Threading10089
+Node: Generalities10231
+Node: Tools10418
+Node: gpg-error-config10588
+Node: Library Copying12167
+Node: Copying40268
+Node: Concept Index59438
+Node: Function and Data Index59735
 
 End Tag Table
