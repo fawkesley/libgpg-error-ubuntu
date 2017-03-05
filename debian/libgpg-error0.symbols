@@ -17,6 +17,9 @@ libgpg-error.so.0 libgpg-error0 #MINVER#
  gpg_strerror_r@GPG_ERROR_1.0 1.14
  gpg_strsource@GPG_ERROR_1.0 1.14
  gpgrt_asprintf@GPG_ERROR_1.0 1.14
+ gpgrt_b64dec_finish@GPG_ERROR_1.0 1.27
+ gpgrt_b64dec_proc@GPG_ERROR_1.0 1.27
+ gpgrt_b64dec_start@GPG_ERROR_1.0 1.27
  gpgrt_bsprintf@GPG_ERROR_1.0 1.14
  gpgrt_check_version@GPG_ERROR_1.0 1.14
  gpgrt_clearerr@GPG_ERROR_1.0 1.14
