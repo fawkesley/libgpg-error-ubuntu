@@ -1,3 +1,9 @@
+libgpg-error (1.27-1) experimental; urgency=medium
+
+  * New upstream version (in experimental due to the freeze).
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Sun, 05 Mar 2017 00:26:34 +0100
+
 libgpg-error (1.26-2) unstable; urgency=medium
 
   * bump symbols version for gpgrt_yield to 1.25
