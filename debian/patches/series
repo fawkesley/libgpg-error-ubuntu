@@ -1,2 +1,7 @@
 0001-Remove-upstream-git-fanciness.patch
 0002-avoid-whitespace-in-gpg-error.def-linker-script-for-.patch
+0003-w32-Conditionalize-ISO-2022-definitions.patch
+0004-Minor-clean-up.patch
+0005-Fix-memory-leak-for-estream.patch
+0006-build-Prepend-the-maintainer-CFLAGS.patch
+0007-Align-es_poll-semantics-closer-with-POSIX.patch
