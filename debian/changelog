@@ -1,3 +1,12 @@
+libgpg-error (1.27-3) unstable; urgency=medium
+
+  * fix header in debian/copyright (Closes: #863659)
+  * more bugfixes and cleanup from upstream
+  * move to unstable
+  * bump Standards-Version to 4.0.0 (no changes needed)
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 26 Jun 2017 12:01:18 -0400
+
 libgpg-error (1.27-2) experimental; urgency=medium
 
   * Removed Jose Carlos Garcia Sogo from uploaders (Closes #862623)
