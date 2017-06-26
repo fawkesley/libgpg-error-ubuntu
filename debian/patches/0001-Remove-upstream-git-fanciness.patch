@@ -14,7 +14,7 @@ beta.
  1 file changed, 5 insertions(+), 59 deletions(-)
 
 diff --git a/autogen.sh b/autogen.sh
-index e5ba5bf..dd73c5f 100755
+index e5ba5bf..96a1222 100755
 --- a/autogen.sh
 +++ b/autogen.sh
 @@ -229,27 +229,11 @@ if [ "$myhost" = "find-version" ]; then
