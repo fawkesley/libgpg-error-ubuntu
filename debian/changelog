@@ -1,3 +1,12 @@
+libgpg-error (1.27-4) unstable; urgency=medium
+
+  * yat2m updates from upstream, now respects SOURCE_DATE_EPOCH
+  * add ia64-unknown-linux-gnu lock-obj definitions
+  * Standards-Version: bump to 4.1.1 (extra → optional)
+  * drop explicit dependency on dh-autoreconf
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Fri, 27 Oct 2017 13:24:38 -0400
+
 libgpg-error (1.27-3) unstable; urgency=medium
 
   * fix header in debian/copyright (Closes: #863659)
