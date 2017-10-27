@@ -5,3 +5,8 @@
 0005-Fix-memory-leak-for-estream.patch
 0006-build-Prepend-the-maintainer-CFLAGS.patch
 0007-Align-es_poll-semantics-closer-with-POSIX.patch
+0008-doc-Implement-simple-ref-erences.patch
+0009-doc-minor-fix-for-xref.patch
+0010-doc-Typo-fix.patch
+0011-yat2m-Take-care-of-SOURCE_DATE_EPOCH.patch
+
