@@ -180,7 +180,7 @@ libgpg-error (1.17-1) unstable; urgency=medium
     introduced there. (Closes: #765430)
   * use upstream's manpage for gpg-error-config
   * bump Standards-Version to 3.9.6 (no changes needed)
- 
+
  -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 29 Sep 2014 11:39:00 -0400
 
 libgpg-error (1.16-2) unstable; urgency=medium
@@ -208,7 +208,7 @@ libgpg-error (1.15-1) unstable; urgency=medium
   * update the text of gpg-error-config.1, since it has not been called
     libgpg-error-config for years
   * update gpg-error-config to mention --mt
-  * debian/copyright: use DEP5 
+  * debian/copyright: use DEP5
   * adopt new symbol visibility (GPG_ERROR_1.0) from upstream
   * fix locking problem at close with patch from upstream
 
@@ -258,7 +258,7 @@ libgpg-error (1.13-0.3) unstable; urgency=medium
 
   * Non-maintainer upload.
   * Use dh-autoreconf instead of autotools-dev. Closes: #749522.
- 
+
  -- Matthias Klose <doko@debian.org>  Mon, 04 Aug 2014 11:12:08 +0200
 
 libgpg-error (1.13-0.2) unstable; urgency=medium
@@ -328,7 +328,7 @@ libgpg-error (1.10-3.1) unstable; urgency=low
 
 libgpg-error (1.10-3) unstable; urgency=low
 
-  * Do not install .la file (Closes: #657156) 
+  * Do not install .la file (Closes: #657156)
 
  -- Jose Carlos Garcia Sogo <jsogo@debian.org>  Thu, 02 Feb 2012 21:56:39 +0000
 
@@ -433,13 +433,13 @@ libgpg-error (1.4-1) unstable; urgency=low
 
 libgpg-error (1.2-1) unstable; urgency=low
 
-  * New upstream version. 
+  * New upstream version.
 
  -- Jose Carlos Garcia Sogo <jsogo@debian.org>  Sat,  4 Mar 2006 15:53:20 +0100
 
 libgpg-error (1.1-4) unstable; urgency=low
 
-  * In addition to relibtoolizing we have to upgrade lib-*.m4 files, 
+  * In addition to relibtoolizing we have to upgrade lib-*.m4 files,
   which are hidden in gettext source. (Closes: #319103)
 
  -- Jose Carlos Garcia Sogo <jsogo@debian.org>  Sun, 31 Jul 2005 14:47:25 +0200
@@ -455,7 +455,7 @@ libgpg-error (1.1-2) unstable; urgency=low
 
   * Include relibtoolize patch again. (Closes: #319103)
   * This package is priority optional. Changed control file to match
-    ftp-master overrides (Closes: #318221) 
+    ftp-master overrides (Closes: #318221)
 
  -- Jose Carlos Garcia Sogo <jsogo@debian.org>  Fri, 29 Jul 2005 00:08:13 +0200
 
@@ -465,7 +465,7 @@ libgpg-error (1.1-1) unstable; urgency=low
   * New upstream release.
      + It does now compile in Hurd (Closes: #307922)
      + German PO file corrections by Jens Seidel. (Closes: #313977)
-  * Bumped Standars-Version. No changes needed. 
+  * Bumped Standars-Version. No changes needed.
 
  -- Jose Carlos Garcia Sogo <jsogo@debian.org>  Thu, 14 Jul 2005 01:23:18 +0300
 
@@ -479,7 +479,7 @@ libgpg-error (1.0-1) unstable; urgency=low
     + 05_Makefile.am: new, remove use of local m4/
     + 06_Makefile.in: new, remove using local m4/ and m4/libtool (which is not
     distributed with upstream sources)
-    + 10_relibtoolize: updated, changing to libtool 1.5 
+    + 10_relibtoolize: updated, changing to libtool 1.5
 
  -- Jose Carlos Garcia Sogo <jsogo@debian.org>  Mon,  2 Aug 2004 13:03:06 +0200
 
