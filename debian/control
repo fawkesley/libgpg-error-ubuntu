@@ -10,7 +10,7 @@ Build-Depends:
  gettext (>= 0.19.3),
 Build-Depends-Indep:
  mingw-w64,
-Standards-Version: 4.1.1
+Standards-Version: 4.1.3
 Homepage: https://www.gnupg.org/related_software/libgpg-error/
 Vcs-Git: https://anonscm.debian.org/git/pkg-gnupg/libgpg-error.git
 Vcs-Browser: https://anonscm.debian.org/git/pkg-gnupg/libgpg-error.git
