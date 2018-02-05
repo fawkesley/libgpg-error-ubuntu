@@ -1,3 +1,21 @@
+libgpg-error (1.27-6) unstable; urgency=medium
+
+  * ship yat2m using upstream patches
+  * use compiler flags for yat2m
+  * fleshed out d/copyright
+  * move to debhelper 11
+  * Standards-Version: bump to 4.1.3 (no changes needed)
+  * move Vcs: to salsa
+  * d/copyright: Format: use https
+  * use secure upstream source URL
+  * use https for lists.gnupg.org
+  * add manpage for yat2m
+  * reduce priority to optional
+  * VERSION gets removed during reconf, drop it during import-orig
+  * libgpg-error-dev: ship errorref.txt
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 05 Feb 2018 18:39:54 -0500
+
 libgpg-error (1.27-5) unstable; urgency=medium
 
   * try to avoid embedding the build path in cross-compiled Windows
