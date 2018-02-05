@@ -6,7 +6,7 @@ Uploaders:
 Priority: standard
 Build-Depends:
  automake (>= 1.14),
- debhelper (>= 10~),
+ debhelper (>= 11~),
  gettext (>= 0.19.3),
 Build-Depends-Indep:
  mingw-w64,
