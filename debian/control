@@ -3,7 +3,7 @@ Section: libs
 Maintainer: Debian GnuPG Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
 Uploaders:
  Daniel Kahn Gillmor <dkg@fifthhorseman.net>,
-Priority: standard
+Priority: optional
 Build-Depends:
  automake (>= 1.14),
  debhelper (>= 11~),
@@ -16,7 +16,6 @@ Vcs-Git: https://salsa.debian.org/debian/libgpg-error.git
 Vcs-Browser: https://salsa.debian.org/debian/libgpg-error
 
 Package: libgpg-error-dev
-Priority: optional
 Section: libdevel
 Architecture: any
 Depends:
@@ -45,7 +44,6 @@ Description: library for common error values and messages in GnuPG components
  pinentry, SmartCard Daemon and possibly more in the future.
 
 Package: libgpg-error0-udeb
-Priority: optional
 Section: debian-installer
 Package-Type: udeb
 Architecture: any
@@ -59,7 +57,6 @@ Description: library for common error values and messages in GnuPG components
 
 Package: libgpg-error-mingw-w64-dev
 Architecture: all
-Priority: optional
 Section: libdevel
 Depends:
  ${misc:Depends},
