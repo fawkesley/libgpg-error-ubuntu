@@ -10,11 +10,11 @@ upstream's git configurations.
 This avoids mistakes like accidentally identifying running code as a
 beta.
 ---
- autogen.sh | 64 +++++---------------------------------------------------------
- 1 file changed, 5 insertions(+), 59 deletions(-)
+ autogen.sh | 68 +++++---------------------------------------------------------
+ 1 file changed, 5 insertions(+), 63 deletions(-)
 
 diff --git a/autogen.sh b/autogen.sh
-index e5ba5bf..96a1222 100755
+index 4b511bf..ff44eaa 100755
 --- a/autogen.sh
 +++ b/autogen.sh
 @@ -229,27 +229,11 @@ if [ "$myhost" = "find-version" ]; then
@@ -50,7 +50,7 @@ index e5ba5bf..96a1222 100755
  
      echo "$package-$vers$tmp:$beta:$ingit:$vers$tmp:$vers:$tmp:$rev:$rvd:"
      exit 0
-@@ -432,44 +416,6 @@ EOF
+@@ -432,48 +416,6 @@ EOF
      die_p
  fi
  
@@ -89,6 +89,10 @@ index e5ba5bf..96a1222 100755
 -EOF
 -      $CP build-aux/git-hooks/commit-msg .git/hooks/commit-msg
 -      chmod +x  .git/hooks/commit-msg
+-      if [ x"${display_name}" != x ]; then
+-         git config format.subjectPrefix "PATCH ${display_name}"
+-         git config sendemail.to "${patches_to}"
+-      fi
 -  fi
 -fi
 -
