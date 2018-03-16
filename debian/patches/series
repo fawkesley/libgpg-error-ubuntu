@@ -1,2 +1,3 @@
 0001-Remove-upstream-git-fanciness.patch
 0016-use-compiler-flags-for-yat2m.patch
+0003-core-Fix-building-on-W64.patch
