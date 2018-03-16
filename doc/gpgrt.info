@@ -1,6 +1,6 @@
 This is gpgrt.info, produced by makeinfo version 6.3 from gpgrt.texi.
 
-This manual is for Libgpg-error (version 1.27, 17 January 2017), which
+This manual is for Libgpg-error (version 1.28, 28 November 2017), which
 is a library for code used by all GnuPG related packages.
 
 Copyright (C) 2014 g10 Code GmbH
@@ -22,7 +22,7 @@ File: gpgrt.info,  Node: Top,  Next: Introduction,  Up: (dir)
 The Libgpg-error Library
 ************************
 
-This manual is for Libgpg-error (version 1.27, 17 January 2017), which
+This manual is for Libgpg-error (version 1.28, 28 November 2017), which
 is a library for code used by all GnuPG related packages.
 
 Copyright (C) 2014 g10 Code GmbH
@@ -162,14 +162,19 @@ which the header file is located to the compilers include file search
 path (via the '-I' option).
 
    However, the path to the include file is determined at the time the
-source is configured.  To solve this problem, Libgpg-error ships with a
-small helper program 'gpg-error-config' that knows the path to the
-include file and other configuration options.  The options that need to
-be added to the compiler invocation at compile time are output by the
-'--cflags' option to 'gpg-error-config'.  The following example shows
-how it can be used at the command line:
+source is configured.  To solve this problem, Libgpg-error ships with
+the small helper programs 'gpg-error-config' and 'gpgrt-config' which
+both know the path to the include file and other configuration options.
+The options that need to be added to the compiler invocation at compile
+time are output by the '--cflags' option to 'gpg-error-config' (or
+'gpgrt-config'.  The following example shows how it can be used at the
+command line:
 
      gcc -c foo.c $(gpg-error-config --cflags)
+
+   or with the identical
+
+     gcc -c foo.c $(gpgrt-config --cflags)
 
    Adding the output of 'gpg-error-config --cflags' to the compiler’s
 command line will ensure that the compiler can find the Libgpg-error
@@ -1240,23 +1245,23 @@ Function and Data Index
 
 
 Tag Table:
-Node: Top729
-Node: Introduction2103
-Node: Getting Started2625
-Node: Features2982
-Node: Overview3111
-Node: Preparation3307
-Node: Header4108
-Node: Building sources5193
-Node: Building sources using Automake6956
-Node: Initializing the library8901
-Node: Multi-Threading10089
-Node: Generalities10231
-Node: Tools10418
-Node: gpg-error-config10588
-Node: Library Copying12167
-Node: Copying40268
-Node: Concept Index59438
-Node: Function and Data Index59735
+Node: Top730
+Node: Introduction2105
+Node: Getting Started2627
+Node: Features2984
+Node: Overview3113
+Node: Preparation3309
+Node: Header4110
+Node: Building sources5195
+Node: Building sources using Automake7073
+Node: Initializing the library9018
+Node: Multi-Threading10206
+Node: Generalities10348
+Node: Tools10535
+Node: gpg-error-config10705
+Node: Library Copying12284
+Node: Copying40385
+Node: Concept Index59555
+Node: Function and Data Index59852
 
 End Tag Table

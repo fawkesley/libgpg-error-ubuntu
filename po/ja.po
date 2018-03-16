@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the libgpg-error package.
 # Yasuaki Taniguchi <yasuakit@gmail.com>, 2010.
 # Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>, 2012.
-# NIIBE Yutaka <gniibe@fsij.org>, 2014, 2015, 2016.
+# NIIBE Yutaka <gniibe@fsij.org>, 2014, 2015, 2016, 2017.
 msgid ""
 msgstr ""
-"Project-Id-Version: libgpg-error 1.26\n"
+"Project-Id-Version: libgpg-error 1.27\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2017-02-28 15:06+0100\n"
-"PO-Revision-Date: 2016-12-22 08:12+0900\n"
+"POT-Creation-Date: 2018-03-13 13:06+0100\n"
+"PO-Revision-Date: 2017-03-06 20:25+0900\n"
 "Last-Translator: NIIBE Yutaka <gniibe@fsij.org>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -164,7 +164,7 @@ msgstr "無効な暗号アルゴリズムです"
 
 #: src/err-codes.h:41
 msgid "Cannot open keyring"
-msgstr ""
+msgstr "鍵リングが開けません"
 
 #: src/err-codes.h:42
 msgid "Invalid packet"
@@ -968,7 +968,7 @@ msgstr "S式に間違った8進キャラクタがあります"
 
 #: src/err-codes.h:242
 msgid "All subkeys are expired or revoked"
-msgstr ""
+msgstr "すべての副鍵が期限切れか失効しています"
 
 #: src/err-codes.h:243
 msgid "Database is corrupted"
@@ -1223,126 +1223,96 @@ msgid "Unknown IPC inquire"
 msgstr "不明なIPC問い合わせです"
 
 #: src/err-codes.h:306
-#, fuzzy
-#| msgid "No crypto engine"
 msgid "Crypto engine too old"
-msgstr "暗号エンジンがありません"
+msgstr "暗号エンジンが古すぎます"
 
 #: src/err-codes.h:307
 msgid "Screen or window too small"
-msgstr ""
+msgstr "スクリーンまたはウィンドウが小さすぎます"
 
 #: src/err-codes.h:308
 msgid "Screen or window too large"
-msgstr ""
+msgstr "スクリーンまたはウィンドウが大きすぎます"
 
 #: src/err-codes.h:309
 msgid "Required environment variable not set"
-msgstr ""
+msgstr "必要な環境変数が設定されていません"
 
 #: src/err-codes.h:310
-#, fuzzy
-#| msgid "Already exists (LDAP)"
 msgid "User ID already exists"
-msgstr "既に存在します (LDAP)"
+msgstr "User IDが既に存在します"
 
 #: src/err-codes.h:311
-#, fuzzy
-#| msgid "Already exists (LDAP)"
 msgid "Name already exists"
-msgstr "既に存在します (LDAP)"
+msgstr "名前が既に存在します"
 
 #: src/err-codes.h:312
-#, fuzzy
-#| msgid "Duplicated value"
 msgid "Duplicated name"
-msgstr "重複した値です"
+msgstr "重複した名前です"
 
 #: src/err-codes.h:313
-#, fuzzy
-#| msgid "Certificate too young"
 msgid "Object is too young"
-msgstr "証明書が若すぎます"
+msgstr "オブジェクトが若すぎます"
 
 #: src/err-codes.h:314
-#, fuzzy
-#| msgid "Provided object is too short"
 msgid "Object is too old"
-msgstr "与えられたオブジェクトが小さすぎます"
+msgstr "オブジェクトが古すぎます"
 
 #: src/err-codes.h:315
-#, fuzzy
-#| msgid "Unknown name"
 msgid "Unknown flag"
-msgstr "不明な名前です"
+msgstr "不明なフラグです"
 
 #: src/err-codes.h:316
-#, fuzzy
-#| msgid "Invalid operation code"
 msgid "Invalid execution order"
-msgstr "無効な操作コードです"
+msgstr "無効な実効順です"
 
 #: src/err-codes.h:317
 msgid "Already fetched"
-msgstr ""
+msgstr "すでにフェッチされてます"
 
 #: src/err-codes.h:318
 msgid "Try again later"
-msgstr ""
+msgstr "後で再度試してください"
 
 #: src/err-codes.h:319
-#, fuzzy
-#| msgid "No name"
 msgid "Wrong name"
-msgstr "名前がありません"
+msgstr "間違った名前です"
 
 #: src/err-codes.h:320
 msgid "System bug detected"
-msgstr ""
+msgstr "システムのバグが検出されました"
 
 #: src/err-codes.h:321
-#, fuzzy
-#| msgid "Unknown system error"
 msgid "Unknown DNS error"
-msgstr "不明なシステムエラー"
+msgstr "不明なDNSエラー"
 
 #: src/err-codes.h:322
-#, fuzzy
-#| msgid "Invalid OID string"
 msgid "Invalid DNS section"
-msgstr "無効な OID 文字列です"
+msgstr "無効な DNS セクションです"
 
 #: src/err-codes.h:323
-#, fuzzy
-#| msgid "Invalid S-expression"
 msgid "Invalid textual address form"
-msgstr "無効な S-式です"
+msgstr "無効なテクストのアドレス形式です"
 
 #: src/err-codes.h:324
-#, fuzzy
-#| msgid "Missing issuer certificate"
 msgid "Missing DNS query packet"
-msgstr "発行元証明書がありません"
+msgstr "DNSクエリのパケットがありません"
 
 #: src/err-codes.h:325
 msgid "Missing DNS answer packet"
-msgstr ""
+msgstr "DNSの返答パケットが欠如しています"
 
 #: src/err-codes.h:326
 msgid "Connection closed in DNS"
-msgstr ""
+msgstr "DNSの接続が閉じられました"
 
 #: src/err-codes.h:327
-#, fuzzy
-#| msgid "Decryption failed"
 msgid "Verification failed in DNS"
-msgstr "復号に失敗しました"
+msgstr "DNSで検証に失敗しました"
 
 #: src/err-codes.h:328
-#, fuzzy
-#| msgid "Timeout"
 msgid "DNS Timeout"
-msgstr "タイムアウトです"
+msgstr "DNSタイムアウトです"
 
 #: src/err-codes.h:329
 msgid "General LDAP error"
