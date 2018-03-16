@@ -1,3 +1,20 @@
+libgpg-error (1.28-1) unstable; urgency=medium
+
+  * new upstream release
+  * use DEP-14 branch naming
+  * d/control: add Rules-Requires-Root: no
+  * drop patches already upstream
+  * refresh patch
+  * do not import generated doc/gpgrt.info with import-orig
+  * d/rules: drop unnecessary options for dh 11
+  * fix w32 builds using upstream patch
+  * update symbols
+  * symlink manpage for gpg-error-config to gpgrt-config
+  * note lintian-override for windows .la files
+  * gpgrt-config is subject to the same reasoning as gpg-error-config.
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Fri, 16 Mar 2018 21:21:36 +0000
+
 libgpg-error (1.27-6) unstable; urgency=medium
 
   * ship yat2m using upstream patches
