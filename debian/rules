@@ -28,7 +28,10 @@ override_dh_install:
 	    debian/libgpg-error0.install.in > debian/libgpg-error0.install
 	sed -e"s,@DEB_HOST_MULTIARCH@,${DEB_HOST_MULTIARCH},g" \
 	    debian/libgpg-error-dev.install.in > debian/libgpg-error-dev.install
-	dh_install --list-missing
+	dh_install
+
+override_dh_missing:
+	dh_missing --list-missing
 
 override_dh_installchangelogs:
 	dh_installchangelogs -A NEWS
