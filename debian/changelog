@@ -1,3 +1,9 @@
+libgpg-error (1.28-2) unstable; urgency=medium
+
+  * avoid FTBFS on arm* (Closes: #893370)
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 19 Mar 2018 17:20:31 +0000
+
 libgpg-error (1.28-1) unstable; urgency=medium
 
   * new upstream release
