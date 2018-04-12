@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error 1.7\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-03-13 13:06+0100\n"
-"PO-Revision-Date: 2015-07-12 16:21+0300\n"
+"POT-Creation-Date: 2018-04-11 09:36+0200\n"
+"PO-Revision-Date: 2018-03-21 19:03+0100\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
 "Language: uk\n"
@@ -1763,15 +1763,92 @@ msgstr "Кінець файла"
 msgid "Unknown error code"
 msgstr "Помилка з невідомим кодом"
 
-#: src/gpg-error.c:450
-#, c-format
-msgid "Usage: %s GPG-ERROR [...]\n"
-msgstr "Користування: %s ПОМИЛКА-GPG [...]\n"
+#: src/argparse.c:318
+msgid "argument not expected"
+msgstr "неочікуваний аргумент"
 
-#: src/gpg-error.c:633
+#: src/argparse.c:320
+msgid "read error"
+msgstr "помилка читання"
+
+#: src/argparse.c:322
+msgid "keyword too long"
+msgstr "занадто довге ключове слово"
+
+#: src/argparse.c:324
+msgid "missing argument"
+msgstr "не вистачає аргументу"
+
+#: src/argparse.c:326
+msgid "invalid argument"
+msgstr "некоректний аргумент"
+
+#: src/argparse.c:328
+msgid "invalid command"
+msgstr "некоректна команда"
+
+#: src/argparse.c:330
+msgid "invalid alias definition"
+msgstr "некоректне визначення замінника"
+
+#: src/argparse.c:332
+msgid "out of core"
+msgstr "вихід за межі області пам’яті"
+
+#: src/argparse.c:334
+msgid "invalid option"
+msgstr "некоректний параметр"
+
+#: src/argparse.c:343
 #, c-format
-msgid "%s: warning: could not recognize %s\n"
-msgstr "%s: попередження: не вдалося розпізнати %s\n"
+msgid "missing argument for option \"%.50s\"\n"
+msgstr "не вказано аргументу до параметра «%.50s»\n"
+
+#: src/argparse.c:345
+#, c-format
+msgid "invalid argument for option \"%.50s\"\n"
+msgstr "некоректний аргумент параметра «%.50s»\n"
+
+#: src/argparse.c:347
+#, c-format
+msgid "option \"%.50s\" does not expect an argument\n"
+msgstr "для параметра «%.50s» аргументи не потрібно вказувати\n"
+
+#: src/argparse.c:350
+#, c-format
+msgid "invalid command \"%.50s\"\n"
+msgstr "некоректна команда «%.50s»\n"
+
+#: src/argparse.c:352
+#, c-format
+msgid "option \"%.50s\" is ambiguous\n"
+msgstr "параметр «%.50s» є неоднозначним\n"
+
+#: src/argparse.c:354
+#, c-format
+msgid "command \"%.50s\" is ambiguous\n"
+msgstr "команда «%.50s» є неоднозначною\n"
+
+#: src/argparse.c:356
+msgid "out of core\n"
+msgstr "вихід за межі області пам’яті\n"
+
+#: src/argparse.c:358
+#, c-format
+msgid "invalid option \"%.50s\"\n"
+msgstr "некоректний параметр «%.50s»\n"
+
+#: src/gpg-error.c:458
+msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
+msgstr ""
+
+#: src/gpg-error.c:627
+#, c-format
+msgid "warning: could not recognize %s\n"
+msgstr "попередження: не вдалося розпізнати %s\n"
+
+#~ msgid "Usage: %s GPG-ERROR [...]\n"
+#~ msgstr "Користування: %s ПОМИЛКА-GPG [...]\n"
 
 #, fuzzy
 #~| msgid "Resources exhausted"

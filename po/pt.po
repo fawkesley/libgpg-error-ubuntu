@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error 1.17\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-03-13 13:06+0100\n"
-"PO-Revision-Date: 2014-11-24 02:32+0000\n"
+"POT-Creation-Date: 2018-04-11 09:36+0200\n"
+"PO-Revision-Date: 2018-03-21 19:03+0100\n"
 "Last-Translator: Paulo Tomé <paulo.jorge.tome@gmail.com>\n"
 "Language-Team: Portuguese <traduz@debian.pt.org>\n"
 "Language: pt\n"
@@ -1868,15 +1868,103 @@ msgstr "Fim do ficheiro"
 msgid "Unknown error code"
 msgstr "Código de erro desconhecido"
 
-#: src/gpg-error.c:450
-#, c-format
-msgid "Usage: %s GPG-ERROR [...]\n"
-msgstr "Utilização: %s GPG-ERROR [...]\n"
+#: src/argparse.c:318
+#, fuzzy
+msgid "argument not expected"
+msgstr "a escrever chave privada para `%s'\n"
 
-#: src/gpg-error.c:633
+#: src/argparse.c:320
+#, fuzzy
+msgid "read error"
+msgstr "erro de leitura"
+
+#: src/argparse.c:322
+#, fuzzy
+msgid "keyword too long"
+msgstr "frase secreta demasiado longa\n"
+
+#: src/argparse.c:324
+#, fuzzy
+msgid "missing argument"
+msgstr "argumento inválido"
+
+#: src/argparse.c:326
+#, fuzzy
+#| msgid "invalid armor"
+msgid "invalid argument"
+msgstr "armadura inválida"
+
+#: src/argparse.c:328
+#, fuzzy
+msgid "invalid command"
+msgstr "comandos em conflito\n"
+
+#: src/argparse.c:330
+#, fuzzy
+msgid "invalid alias definition"
+msgstr "opções de importação inválidas\n"
+
+#: src/argparse.c:332
+#, fuzzy
+msgid "out of core"
+msgstr "não processado"
+
+#: src/argparse.c:334
+#, fuzzy
+msgid "invalid option"
+msgstr "opções de importação inválidas\n"
+
+#: src/argparse.c:343
 #, c-format
-msgid "%s: warning: could not recognize %s\n"
-msgstr "%s: aviso: não consegui reconhecer %s\n"
+msgid "missing argument for option \"%.50s\"\n"
+msgstr ""
+
+#: src/argparse.c:345
+#, fuzzy, c-format
+msgid "invalid argument for option \"%.50s\"\n"
+msgstr "opções de importação inválidas\n"
+
+#: src/argparse.c:347
+#, c-format
+msgid "option \"%.50s\" does not expect an argument\n"
+msgstr ""
+
+#: src/argparse.c:350
+#, fuzzy, c-format
+msgid "invalid command \"%.50s\"\n"
+msgstr "Comando inválido (tente \"help\")\n"
+
+#: src/argparse.c:352
+#, c-format
+msgid "option \"%.50s\" is ambiguous\n"
+msgstr ""
+
+#: src/argparse.c:354
+#, c-format
+msgid "command \"%.50s\" is ambiguous\n"
+msgstr ""
+
+#: src/argparse.c:356
+#, fuzzy
+msgid "out of core\n"
+msgstr "não processado"
+
+#: src/argparse.c:358
+#, fuzzy, c-format
+msgid "invalid option \"%.50s\"\n"
+msgstr "opções de importação inválidas\n"
+
+#: src/gpg-error.c:458
+msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
+msgstr ""
+
+#: src/gpg-error.c:627
+#, c-format
+msgid "warning: could not recognize %s\n"
+msgstr "aviso: não consegui reconhecer %s\n"
+
+#~ msgid "Usage: %s GPG-ERROR [...]\n"
+#~ msgstr "Utilização: %s GPG-ERROR [...]\n"
 
 #, fuzzy
 #~| msgid "Resources exhausted"

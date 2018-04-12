@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-03-13 13:06+0100\n"
-"PO-Revision-Date: 2015-09-27 12:04+0000\n"
+"POT-Creation-Date: 2018-04-11 09:36+0200\n"
+"PO-Revision-Date: 2018-03-21 19:03+0100\n"
 "Last-Translator: Ineiev <ineiev@gnu.org>\n"
 "Language-Team: Russian <gnupg-ru@gnupg.org>\n"
 "Language: ru\n"
@@ -1752,12 +1752,89 @@ msgstr "Конец файла"
 msgid "Unknown error code"
 msgstr "Неизвестный код ошибки"
 
-#: src/gpg-error.c:450
-#, c-format
-msgid "Usage: %s GPG-ERROR [...]\n"
-msgstr "Вызов: %s GPG-ERROR [...]\n"
+#: src/argparse.c:318
+msgid "argument not expected"
+msgstr "неожиданный параметр"
 
-#: src/gpg-error.c:633
+#: src/argparse.c:320
+msgid "read error"
+msgstr "ошибка чтения"
+
+#: src/argparse.c:322
+msgid "keyword too long"
+msgstr "слишком длинное ключевое слово"
+
+#: src/argparse.c:324
+msgid "missing argument"
+msgstr "пропущен аргумент"
+
+#: src/argparse.c:326
+msgid "invalid argument"
+msgstr "недопустимый аргумент"
+
+#: src/argparse.c:328
+msgid "invalid command"
+msgstr "недопустимая команда"
+
+#: src/argparse.c:330
+msgid "invalid alias definition"
+msgstr "недопустимое определение синонима"
+
+#: src/argparse.c:332
+msgid "out of core"
+msgstr "нехватка выделенной памяти"
+
+#: src/argparse.c:334
+msgid "invalid option"
+msgstr "недопустимый параметр"
+
+#: src/argparse.c:343
 #, c-format
-msgid "%s: warning: could not recognize %s\n"
-msgstr "%s: внимание: не распознано %s\n"
+msgid "missing argument for option \"%.50s\"\n"
+msgstr "не хватает аргумента для параметра \"%.50s\"\n"
+
+#: src/argparse.c:345
+#, c-format
+msgid "invalid argument for option \"%.50s\"\n"
+msgstr "недопустимый аргумент для параметра \"%.50s\"\n"
+
+#: src/argparse.c:347
+#, c-format
+msgid "option \"%.50s\" does not expect an argument\n"
+msgstr "у параметра \"%.50s\" не должно быть аргумента\n"
+
+#: src/argparse.c:350
+#, c-format
+msgid "invalid command \"%.50s\"\n"
+msgstr "недопустимая команда \"%.50s\"\n"
+
+#: src/argparse.c:352
+#, c-format
+msgid "option \"%.50s\" is ambiguous\n"
+msgstr "параметр \"%.50s\" неоднозначен\n"
+
+#: src/argparse.c:354
+#, c-format
+msgid "command \"%.50s\" is ambiguous\n"
+msgstr "команда \"%.50s\" неоднозначна\n"
+
+#: src/argparse.c:356
+msgid "out of core\n"
+msgstr "нехватка выделенной памяти\n"
+
+#: src/argparse.c:358
+#, c-format
+msgid "invalid option \"%.50s\"\n"
+msgstr "недопустимый параметр \"%.50s\"\n"
+
+#: src/gpg-error.c:458
+msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
+msgstr ""
+
+#: src/gpg-error.c:627
+#, c-format
+msgid "warning: could not recognize %s\n"
+msgstr "внимание: не распознано %s\n"
+
+#~ msgid "Usage: %s GPG-ERROR [...]\n"
+#~ msgstr "Вызов: %s GPG-ERROR [...]\n"
