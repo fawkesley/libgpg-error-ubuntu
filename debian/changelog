@@ -1,3 +1,14 @@
+libgpg-error (1.29-1) unstable; urgency=medium
+
+  * New upstream release
+  * drop patches already upstream
+  * refresh patches; import bugfix from upstream
+  * update symbols with more gpgrt_* symbols
+  * d/clean: clean up doc/gpgrt.info
+  * Standards-Version: bump to 4.1.4 (no changes needed)
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Thu, 12 Apr 2018 19:26:37 -0400
+
 libgpg-error (1.28-2) unstable; urgency=medium
 
   * avoid FTBFS on arm* (Closes: #893370)
