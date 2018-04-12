@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error 1.10\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-03-13 13:06+0100\n"
-"PO-Revision-Date: 2014-11-17 20:08+0100\n"
+"POT-Creation-Date: 2018-04-11 09:36+0200\n"
+"PO-Revision-Date: 2018-03-21 19:01+0100\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <debian-l10n-danish@lists.debian.org>\n"
 "Language: da\n"
@@ -1872,15 +1872,95 @@ msgstr "Slutning på fil"
 msgid "Unknown error code"
 msgstr "Ukendt fejlkode"
 
-#: src/gpg-error.c:450
-#, c-format
-msgid "Usage: %s GPG-ERROR [...]\n"
-msgstr "Brug: %s GPG-ERROR [...]\n"
+#: src/argparse.c:318
+msgid "argument not expected"
+msgstr "parameter var ikke forventet"
 
-#: src/gpg-error.c:633
+#: src/argparse.c:320
+msgid "read error"
+msgstr "læsefejl"
+
+#: src/argparse.c:322
+msgid "keyword too long"
+msgstr "nøgleord er for langt"
+
+#: src/argparse.c:324
+msgid "missing argument"
+msgstr "manglende parameter"
+
+#: src/argparse.c:326
+#, fuzzy
+#| msgid "invalid value\n"
+msgid "invalid argument"
+msgstr "ugyldig værdi\n"
+
+#: src/argparse.c:328
+msgid "invalid command"
+msgstr "ugyldig kommando"
+
+#: src/argparse.c:330
+msgid "invalid alias definition"
+msgstr "ugyldig aliasdefinition"
+
+#: src/argparse.c:332
+msgid "out of core"
+msgstr "ikke nok kerne"
+
+#: src/argparse.c:334
+msgid "invalid option"
+msgstr "ugyldig indstilling"
+
+#: src/argparse.c:343
 #, c-format
-msgid "%s: warning: could not recognize %s\n"
-msgstr "%s: advarsel: kunne ikke genkende %s\n"
+msgid "missing argument for option \"%.50s\"\n"
+msgstr "manglende parameter for indstilling »%.50s«\n"
+
+#: src/argparse.c:345
+#, fuzzy, c-format
+#| msgid "missing argument for option \"%.50s\"\n"
+msgid "invalid argument for option \"%.50s\"\n"
+msgstr "manglende parameter for indstilling »%.50s«\n"
+
+#: src/argparse.c:347
+#, c-format
+msgid "option \"%.50s\" does not expect an argument\n"
+msgstr "tilvalg »%.50s« forventer ikke et argument\n"
+
+#: src/argparse.c:350
+#, c-format
+msgid "invalid command \"%.50s\"\n"
+msgstr "ugyldig kommando »%.50s«\n"
+
+#: src/argparse.c:352
+#, c-format
+msgid "option \"%.50s\" is ambiguous\n"
+msgstr "tilvalg »%.50s« er tvetydigt\n"
+
+#: src/argparse.c:354
+#, c-format
+msgid "command \"%.50s\" is ambiguous\n"
+msgstr "kommando »%.50s« er tvetydig\n"
+
+#: src/argparse.c:356
+msgid "out of core\n"
+msgstr "uden for kerne\n"
+
+#: src/argparse.c:358
+#, c-format
+msgid "invalid option \"%.50s\"\n"
+msgstr "ugyldigt tilvalg »%.50s«\n"
+
+#: src/gpg-error.c:458
+msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
+msgstr ""
+
+#: src/gpg-error.c:627
+#, c-format
+msgid "warning: could not recognize %s\n"
+msgstr "advarsel: kunne ikke genkende %s\n"
+
+#~ msgid "Usage: %s GPG-ERROR [...]\n"
+#~ msgstr "Brug: %s GPG-ERROR [...]\n"
 
 #, fuzzy
 #~| msgid "Resources exhausted"

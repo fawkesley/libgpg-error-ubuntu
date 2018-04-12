@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error 1.10\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-03-13 13:06+0100\n"
-"PO-Revision-Date: 2014-11-17 00:16+0100\n"
+"POT-Creation-Date: 2018-04-11 09:36+0200\n"
+"PO-Revision-Date: 2018-03-21 19:02+0100\n"
 "Last-Translator: Freek de Kruijf <f.de.kruijf@gmail.com>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
@@ -1868,15 +1868,109 @@ msgstr "Einde van bestand"
 msgid "Unknown error code"
 msgstr "Onbekende foutcode"
 
-#: src/gpg-error.c:450
-#, c-format
-msgid "Usage: %s GPG-ERROR [...]\n"
-msgstr "Gebruik: %s GPG-ERROR [...]\n"
+#: src/argparse.c:318
+#, fuzzy
+#| msgid "Data not encrypted"
+msgid "argument not expected"
+msgstr "Gegevens niet versleuteld"
 
-#: src/gpg-error.c:633
+#: src/argparse.c:320
+#, fuzzy
+#| msgid "IPC read error"
+msgid "read error"
+msgstr "IPC-leesfout"
+
+#: src/argparse.c:322
+#, fuzzy
+#| msgid "Line too long"
+msgid "keyword too long"
+msgstr "Regel te lang"
+
+#: src/argparse.c:324
+#, fuzzy
+#| msgid "Missing value"
+msgid "missing argument"
+msgstr "Ontbrekende waarde"
+
+#: src/argparse.c:326
+#, fuzzy
+#| msgid "Invalid argument"
+msgid "invalid argument"
+msgstr "Ongeldig argument"
+
+#: src/argparse.c:328
+#, fuzzy
+#| msgid "Invalid card"
+msgid "invalid command"
+msgstr "Ongeldige kaart"
+
+#: src/argparse.c:330
+#, fuzzy
+#| msgid "Invalid OID string"
+msgid "invalid alias definition"
+msgstr "Ongeldige OID-tekenreeks"
+
+#: src/argparse.c:332
+msgid "out of core"
+msgstr ""
+
+#: src/argparse.c:334
+#, fuzzy
+#| msgid "Invalid operation code"
+msgid "invalid option"
+msgstr "Ongeldige bewerkingscode"
+
+#: src/argparse.c:343
 #, c-format
-msgid "%s: warning: could not recognize %s\n"
-msgstr "%s: waarschuwing: kon %s niet herkennen\n"
+msgid "missing argument for option \"%.50s\"\n"
+msgstr ""
+
+#: src/argparse.c:345
+#, c-format
+msgid "invalid argument for option \"%.50s\"\n"
+msgstr ""
+
+#: src/argparse.c:347
+#, c-format
+msgid "option \"%.50s\" does not expect an argument\n"
+msgstr ""
+
+#: src/argparse.c:350
+#, c-format
+msgid "invalid command \"%.50s\"\n"
+msgstr ""
+
+#: src/argparse.c:352
+#, c-format
+msgid "option \"%.50s\" is ambiguous\n"
+msgstr ""
+
+#: src/argparse.c:354
+#, c-format
+msgid "command \"%.50s\" is ambiguous\n"
+msgstr ""
+
+#: src/argparse.c:356
+msgid "out of core\n"
+msgstr ""
+
+#: src/argparse.c:358
+#, fuzzy, c-format
+#| msgid "Invalid operation code"
+msgid "invalid option \"%.50s\"\n"
+msgstr "Ongeldige bewerkingscode"
+
+#: src/gpg-error.c:458
+msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
+msgstr ""
+
+#: src/gpg-error.c:627
+#, fuzzy, c-format
+msgid "warning: could not recognize %s\n"
+msgstr "waarschuwing: kon %s niet herkennen\n"
+
+#~ msgid "Usage: %s GPG-ERROR [...]\n"
+#~ msgstr "Gebruik: %s GPG-ERROR [...]\n"
 
 #, fuzzy
 #~| msgid "Resources exhausted"

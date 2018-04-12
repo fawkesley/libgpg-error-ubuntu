@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error 1.18\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-03-13 13:06+0100\n"
-"PO-Revision-Date: 2014-11-27 19:31+0100\n"
+"POT-Creation-Date: 2018-04-11 09:36+0200\n"
+"PO-Revision-Date: 2018-03-21 18:59+0100\n"
 "Last-Translator: Petr Pisar <petr.pisar@atlas.cz>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "Language: cs\n"
@@ -1877,15 +1877,93 @@ msgstr "Konec souboru"
 msgid "Unknown error code"
 msgstr "Neznámý kód chyby"
 
-#: src/gpg-error.c:450
-#, c-format
-msgid "Usage: %s GPG-ERROR [...]\n"
-msgstr "Použití: %s CHYBA_GPG […]\n"
+#: src/argparse.c:318
+msgid "argument not expected"
+msgstr "argument nebyl očekáván"
 
-#: src/gpg-error.c:633
+#: src/argparse.c:320
+msgid "read error"
+msgstr "chyba při čtení"
+
+#: src/argparse.c:322
+msgid "keyword too long"
+msgstr "klíčové slovo je příliš dlouhé"
+
+#: src/argparse.c:324
+msgid "missing argument"
+msgstr "postrádám argument"
+
+#: src/argparse.c:326
+msgid "invalid argument"
+msgstr "neplatný argument"
+
+#: src/argparse.c:328
+msgid "invalid command"
+msgstr "neplatný příkaz"
+
+#: src/argparse.c:330
+msgid "invalid alias definition"
+msgstr "neplatný definice aliasu"
+
+#: src/argparse.c:332
+msgid "out of core"
+msgstr "nedostatek paměti"
+
+#: src/argparse.c:334
+msgid "invalid option"
+msgstr "neplatný parametr"
+
+#: src/argparse.c:343
 #, c-format
-msgid "%s: warning: could not recognize %s\n"
-msgstr "%s: pozor: %s nebylo možné rozpoznat\n"
+msgid "missing argument for option \"%.50s\"\n"
+msgstr "postrádám argument u volby „%.50s“\n"
+
+#: src/argparse.c:345
+#, c-format
+msgid "invalid argument for option \"%.50s\"\n"
+msgstr "neplatný argument u volby „%.50s“\n"
+
+#: src/argparse.c:347
+#, c-format
+msgid "option \"%.50s\" does not expect an argument\n"
+msgstr "volba „%.50s“ nečeká argument\n"
+
+#: src/argparse.c:350
+#, c-format
+msgid "invalid command \"%.50s\"\n"
+msgstr "neplatný příkaz „%.50s“\n"
+
+#: src/argparse.c:352
+#, c-format
+msgid "option \"%.50s\" is ambiguous\n"
+msgstr "volba „%.50s“ není jednoznačná\n"
+
+#: src/argparse.c:354
+#, c-format
+msgid "command \"%.50s\" is ambiguous\n"
+msgstr "příkaz „%.50s“ není jednoznačný\n"
+
+# Yet another expression for `not enough memory' :)
+#: src/argparse.c:356
+msgid "out of core\n"
+msgstr "nedostatek paměti\n"
+
+#: src/argparse.c:358
+#, c-format
+msgid "invalid option \"%.50s\"\n"
+msgstr "neplatný parametr „%.50s“\n"
+
+#: src/gpg-error.c:458
+msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
+msgstr ""
+
+#: src/gpg-error.c:627
+#, c-format
+msgid "warning: could not recognize %s\n"
+msgstr "pozor: %s nebylo možné rozpoznat\n"
+
+#~ msgid "Usage: %s GPG-ERROR [...]\n"
+#~ msgstr "Použití: %s CHYBA_GPG […]\n"
 
 #, fuzzy
 #~| msgid "Resources exhausted"
