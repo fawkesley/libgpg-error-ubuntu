@@ -1,3 +1,9 @@
+libgpg-error (1.29-2) unstable; urgency=medium
+
+  * Add texinfo to build-depends
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Fri, 13 Apr 2018 17:11:52 -0400
+
 libgpg-error (1.29-1) unstable; urgency=medium
 
   * New upstream release
