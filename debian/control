@@ -24,10 +24,13 @@ Depends:
  libgpg-error0 (= ${binary:Version}),
  ${misc:Depends},
  ${shlibs:Depends},
-Description: library for common error values and messages in GnuPG components (development)
- Library that defines common error values for all GnuPG
- components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
- pinentry, SmartCard Daemon and possibly more in the future.
+Description: GnuPG development runtime library (developer tools)
+ Library that defines common error values, messages, and common
+ runtime functionality for all GnuPG components.  Among these are GPG,
+ GPGSM, GPGME, GPG-Agent, libgcrypt, pinentry, SmartCard Daemon and
+ possibly more in the future.
+ .
+ It will likely be renamed "gpgrt" in the future.
  .
  This package contains the headers and other files needed to compile
  against this library.
@@ -40,10 +43,13 @@ Depends:
  ${shlibs:Depends},
 Pre-Depends:
  ${misc:Pre-Depends},
-Description: library for common error values and messages in GnuPG components
- Library that defines common error values for all GnuPG
- components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
- pinentry, SmartCard Daemon and possibly more in the future.
+Description: GnuPG development runtime library
+ Library that defines common error values, messages, and common
+ runtime functionality for all GnuPG components.  Among these are GPG,
+ GPGSM, GPGME, GPG-Agent, libgcrypt, pinentry, SmartCard Daemon and
+ possibly more in the future.
+ .
+ It will likely be renamed "gpgrt" in the future.
 
 Package: gpgrt-tools
 Architecture: any
@@ -54,10 +60,11 @@ Depends:
  ${shlibs:Depends},
 Pre-Depends:
  ${misc:Pre-Depends},
-Description: library for common error values and messages in GnuPG components (executable tools)
- Library that defines common error values for all GnuPG
- components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
- pinentry, SmartCard Daemon and possibly more in the future.
+Description: GnuPG development runtime library (executable tools)
+ gpgrt (also known as libgpg-error) defines common error values,
+ messages, and common runtime functionality for all GnuPG components.
+ Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt, pinentry,
+ SmartCard Daemon and possibly more in the future.
  .
  This package contains yat2m, a Texinfo to nroff/troff converter
  useful for building manpages, and gpg-error, a binary for deciphering
@@ -74,6 +81,8 @@ Description: library for common error values and messages in GnuPG components
  Library that defines common error values for all GnuPG
  components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
  pinentry, SmartCard Daemon and possibly more in the future.
+ .
+ It will likely be renamed "gpgrt" in the future.
 
 Package: libgpg-error-mingw-w64-dev
 Architecture: all
@@ -83,9 +92,12 @@ Depends:
 Suggests:
  wine,
 Description: library of error values and messages in GnuPG (Windows development)
- Library that defines common error values for all GnuPG
- components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
- pinentry, SmartCard Daemon and possibly more in the future.
+ Library that defines common error values, messages, and common
+ runtime functionality for all GnuPG components.  Among these are GPG,
+ GPGSM, GPGME, GPG-Agent, libgcrypt, pinentry, SmartCard Daemon and
+ possibly more in the future.
+ .
+ It will likely be renamed "gpgrt" in the future.
  .
  This is a Windows version of libgpg-error.  It's meant to be used
  when cross-building software that targets the Windows platform,
