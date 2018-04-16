@@ -1,3 +1,10 @@
+libgpg-error (1.29-4) unstable; urgency=medium
+
+  * split out new gpgrt-tools package (Closes: #895770)
+  * clean up package descriptions
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 16 Apr 2018 15:21:22 -0700
+
 libgpg-error (1.29-3) unstable; urgency=medium
 
   * fix yat2m build for cross-compilation
