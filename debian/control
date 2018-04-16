@@ -45,6 +45,24 @@ Description: library for common error values and messages in GnuPG components
  components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
  pinentry, SmartCard Daemon and possibly more in the future.
 
+Package: gpgrt-tools
+Architecture: any
+Section: devel
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Pre-Depends:
+ ${misc:Pre-Depends},
+Description: library for common error values and messages in GnuPG components (executable tools)
+ Library that defines common error values for all GnuPG
+ components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
+ pinentry, SmartCard Daemon and possibly more in the future.
+ .
+ This package contains yat2m, a Texinfo to nroff/troff converter
+ useful for building manpages, and gpg-error, a binary for deciphering
+ GnuPG/libgcrypt error codes.
+
 Package: libgpg-error0-udeb
 Section: debian-installer
 Package-Type: udeb
