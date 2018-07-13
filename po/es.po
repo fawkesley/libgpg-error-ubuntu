@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error 1.30-beta4\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-05-02 20:32+0200\n"
+"POT-Creation-Date: 2018-07-12 11:06+0200\n"
 "PO-Revision-Date: 2018-04-15 08:52+0000\n"
 "Last-Translator: Tails translators <amnesia@boum.org>\n"
 "Language-Team: es <LL@li.org>\n"
@@ -938,7 +938,7 @@ msgstr "Caracter erróneo en la S-expression"
 
 #: src/err-codes.h:234
 msgid "Bad quotation in S-expression"
-msgstr ""
+msgstr "Comillas mal puestas en la S-expression"
 
 #: src/err-codes.h:235
 msgid "Zero prefix in S-expression"
@@ -946,11 +946,11 @@ msgstr "Prefijo cero en S-expression"
 
 #: src/err-codes.h:236
 msgid "Nested display hints in S-expression"
-msgstr ""
+msgstr "Sugerencias de exhibición anidadas en S-expression"
 
 #: src/err-codes.h:237
 msgid "Unmatched display hints"
-msgstr ""
+msgstr "Sugerencias de exhibición no concordadas"
 
 #: src/err-codes.h:238
 msgid "Unexpected reserved punctuation in S-expression"
@@ -958,15 +958,15 @@ msgstr ""
 
 #: src/err-codes.h:239
 msgid "Bad hexadecimal character in S-expression"
-msgstr ""
+msgstr "Caracter hexadecimal equivocado en la S-expression"
 
 #: src/err-codes.h:240
 msgid "Odd hexadecimal numbers in S-expression"
-msgstr ""
+msgstr "Caracteres hexadecimales pares en la S-expression"
 
 #: src/err-codes.h:241
 msgid "Bad octal character in S-expression"
-msgstr ""
+msgstr "Caracter octal equivocado en la S-expression"
 
 #: src/err-codes.h:242
 msgid "All subkeys are expired or revoked"
@@ -982,11 +982,11 @@ msgstr "El servidor ha indicado un fallo"
 
 #: src/err-codes.h:245
 msgid "No name"
-msgstr ""
+msgstr "Sin nombre"
 
 #: src/err-codes.h:246
 msgid "No key"
-msgstr ""
+msgstr "Sin clave"
 
 #: src/err-codes.h:247
 msgid "Legacy key"
@@ -1010,7 +1010,7 @@ msgstr "No hay cadena de certificados"
 
 #: src/err-codes.h:252
 msgid "Certificate is too large"
-msgstr ""
+msgstr "Certificado demasiado grande"
 
 #: src/err-codes.h:253
 msgid "Invalid record"
@@ -1102,7 +1102,7 @@ msgstr ""
 
 #: src/err-codes.h:275
 msgid "Bogus string"
-msgstr ""
+msgstr "Cadena errónea"
 
 #: src/err-codes.h:276
 msgid "Forbidden"
@@ -1110,7 +1110,7 @@ msgstr "Prohibido"
 
 #: src/err-codes.h:277
 msgid "Key disabled"
-msgstr ""
+msgstr "Clave deshabilitada"
 
 #: src/err-codes.h:278
 msgid "Not possible with a card based key"
@@ -1118,39 +1118,39 @@ msgstr "La operación no es posible con una clave basada en tarjeta"
 
 #: src/err-codes.h:279
 msgid "Invalid lock object"
-msgstr ""
+msgstr "Objecto de bloqueo incorrecto"
 
 #: src/err-codes.h:280
 msgid "True"
-msgstr ""
+msgstr "Verdadero"
 
 #: src/err-codes.h:281
 msgid "False"
-msgstr ""
+msgstr "Falso"
 
 #: src/err-codes.h:282
 msgid "General IPC error"
-msgstr ""
+msgstr "Error general de IPC"
 
 #: src/err-codes.h:283
 msgid "IPC accept call failed"
-msgstr ""
+msgstr "Fallo al aceptar la llamada IPC"
 
 #: src/err-codes.h:284
 msgid "IPC connect call failed"
-msgstr ""
+msgstr "Falló la llamada de conexión IPC"
 
 #: src/err-codes.h:285
 msgid "Invalid IPC response"
-msgstr ""
+msgstr "Respuesta IPC no válida"
 
 #: src/err-codes.h:286
 msgid "Invalid value passed to IPC"
-msgstr ""
+msgstr "Valor no válido pasado a IPC"
 
 #: src/err-codes.h:287
 msgid "Incomplete line passed to IPC"
-msgstr ""
+msgstr "Línea incompleta pasada a IPC"
 
 #: src/err-codes.h:288
 msgid "Line passed to IPC too long"
@@ -1170,27 +1170,27 @@ msgstr ""
 
 #: src/err-codes.h:292
 msgid "Not an IPC server"
-msgstr ""
+msgstr "No es un servidor IPC"
 
 #: src/err-codes.h:293
 msgid "Not an IPC client"
-msgstr ""
+msgstr "No es un cliente IPC"
 
 #: src/err-codes.h:294
 msgid "Problem starting IPC server"
-msgstr ""
+msgstr "Problema al iniciar el servidor IPC"
 
 #: src/err-codes.h:295
 msgid "IPC read error"
-msgstr ""
+msgstr "error de lectura IPC"
 
 #: src/err-codes.h:296
 msgid "IPC write error"
-msgstr ""
+msgstr "error de escritura IPC"
 
 #: src/err-codes.h:297
 msgid "Too much data for IPC layer"
-msgstr ""
+msgstr "Demasiados datos para la capa IPC"
 
 #: src/err-codes.h:298
 msgid "Unexpected IPC command"
@@ -1206,19 +1206,19 @@ msgstr "Error de sintaxis IPC"
 
 #: src/err-codes.h:301
 msgid "IPC call has been cancelled"
-msgstr ""
+msgstr "Se ha cancelado IPC"
 
 #: src/err-codes.h:302
 msgid "No input source for IPC"
-msgstr ""
+msgstr "No hay fuente de entrada para IPC"
 
 #: src/err-codes.h:303
 msgid "No output source for IPC"
-msgstr ""
+msgstr "No hay fuente de salida para IPC"
 
 #: src/err-codes.h:304
 msgid "IPC parameter error"
-msgstr ""
+msgstr "Error de parámetro IPC"
 
 #: src/err-codes.h:305
 msgid "Unknown IPC inquire"
@@ -1226,23 +1226,23 @@ msgstr ""
 
 #: src/err-codes.h:306
 msgid "Crypto engine too old"
-msgstr ""
+msgstr "Motor de cifrado demasiado antiguo"
 
 #: src/err-codes.h:307
 msgid "Screen or window too small"
-msgstr ""
+msgstr "La ventana o la pantalla son demasiado pequeñas."
 
 #: src/err-codes.h:308
 msgid "Screen or window too large"
-msgstr ""
+msgstr "La ventana o pantalla son demasiado grandes"
 
 #: src/err-codes.h:309
 msgid "Required environment variable not set"
-msgstr ""
+msgstr "No se ha configurado la variable de entorno requerida"
 
 #: src/err-codes.h:310
 msgid "User ID already exists"
-msgstr ""
+msgstr "Esa ID de usuario ya existe"
 
 #: src/err-codes.h:311
 msgid "Name already exists"
@@ -1250,11 +1250,11 @@ msgstr "El nombre ya existe"
 
 #: src/err-codes.h:312
 msgid "Duplicated name"
-msgstr ""
+msgstr "Nombre duplicado"
 
 #: src/err-codes.h:313
 msgid "Object is too young"
-msgstr ""
+msgstr "El objeto es demasiado joven"
 
 #: src/err-codes.h:314
 msgid "Object is too old"
@@ -1266,7 +1266,7 @@ msgstr ""
 
 #: src/err-codes.h:316
 msgid "Invalid execution order"
-msgstr ""
+msgstr "Orden de ejecución no válido"
 
 #: src/err-codes.h:317
 msgid "Already fetched"
@@ -1306,39 +1306,39 @@ msgstr ""
 
 #: src/err-codes.h:326
 msgid "Connection closed in DNS"
-msgstr ""
+msgstr "Conexión cerrada en DNS"
 
 #: src/err-codes.h:327
 msgid "Verification failed in DNS"
-msgstr ""
+msgstr "Fallo de verificación en DNS"
 
 #: src/err-codes.h:328
 msgid "DNS Timeout"
-msgstr ""
+msgstr "Tiempo excedido para DNS"
 
 #: src/err-codes.h:329
 msgid "General LDAP error"
-msgstr ""
+msgstr "Error general de LDAP"
 
 #: src/err-codes.h:330
 msgid "General LDAP attribute error"
-msgstr ""
+msgstr "Error general de atributo de LDAP"
 
 #: src/err-codes.h:331
 msgid "General LDAP name error"
-msgstr ""
+msgstr "Error general de nombre de LDAP"
 
 #: src/err-codes.h:332
 msgid "General LDAP security error"
-msgstr ""
+msgstr "Error general de seguridad de LDAP"
 
 #: src/err-codes.h:333
 msgid "General LDAP service error"
-msgstr ""
+msgstr "Error general de servicio de LDAP"
 
 #: src/err-codes.h:334
 msgid "General LDAP update error"
-msgstr ""
+msgstr "Error general de actualización de LDAP"
 
 #: src/err-codes.h:335
 msgid "Experimental LDAP error code"
@@ -1350,43 +1350,43 @@ msgstr "Código de error privado de LDAP"
 
 #: src/err-codes.h:337
 msgid "Other general LDAP error"
-msgstr ""
+msgstr "Otro error general de LDAP"
 
 #: src/err-codes.h:338
 msgid "LDAP connecting failed (X)"
-msgstr ""
+msgstr "Ha fallado la conexión LDAP (X)"
 
 #: src/err-codes.h:339
 msgid "LDAP referral limit exceeded"
-msgstr ""
+msgstr "Límite de referrals de LDAP excedido"
 
 #: src/err-codes.h:340
 msgid "LDAP client loop"
-msgstr ""
+msgstr "Bucle del cliente LDAP"
 
 #: src/err-codes.h:341
 msgid "No LDAP results returned"
-msgstr ""
+msgstr "No se devolvió ningún resultado LDAP"
 
 #: src/err-codes.h:342
 msgid "LDAP control not found"
-msgstr ""
+msgstr "Control de LDAP no encontrado"
 
 #: src/err-codes.h:343
 msgid "Not supported by LDAP"
-msgstr ""
+msgstr "No soportado por LDAP"
 
 #: src/err-codes.h:344
 msgid "LDAP connect error"
-msgstr ""
+msgstr "Error de conexión de LDAP"
 
 #: src/err-codes.h:345
 msgid "Out of memory in LDAP"
-msgstr ""
+msgstr "Sin memoria suficiente para LDAP"
 
 #: src/err-codes.h:346
 msgid "Bad parameter to an LDAP routine"
-msgstr ""
+msgstr "Parámetro incorrecto para una rutina de LDAP"
 
 #: src/err-codes.h:347
 msgid "User cancelled LDAP operation"
@@ -1394,15 +1394,15 @@ msgstr "Operación LDAP cancelada por el usuario"
 
 #: src/err-codes.h:348
 msgid "Bad LDAP search filter"
-msgstr ""
+msgstr "Filtro de búsqueda de LDAP incorrecto"
 
 #: src/err-codes.h:349
 msgid "Unknown LDAP authentication method"
-msgstr ""
+msgstr "Método de autentificación de LDAP desconocido"
 
 #: src/err-codes.h:350
 msgid "Timeout in LDAP"
-msgstr ""
+msgstr "Tiempo excedido para LDAP"
 
 #: src/err-codes.h:351
 msgid "LDAP decoding error"
@@ -1410,7 +1410,7 @@ msgstr "Error de decoding de LDAP"
 
 #: src/err-codes.h:352
 msgid "LDAP encoding error"
-msgstr ""
+msgstr "Error de encoding de LDAP"
 
 #: src/err-codes.h:353
 msgid "LDAP local error"
@@ -1430,15 +1430,15 @@ msgstr "Error de operación de LDAP"
 
 #: src/err-codes.h:357
 msgid "LDAP protocol error"
-msgstr ""
+msgstr "Error de protocolo de LDAP"
 
 #: src/err-codes.h:358
 msgid "Time limit exceeded in LDAP"
-msgstr ""
+msgstr "Límite de tiempo excedido en LDAP"
 
 #: src/err-codes.h:359
 msgid "Size limit exceeded in LDAP"
-msgstr ""
+msgstr "Límite de tamaño excedido en LDAP"
 
 #: src/err-codes.h:360
 msgid "LDAP compare false"
@@ -1450,11 +1450,11 @@ msgstr ""
 
 #: src/err-codes.h:362
 msgid "LDAP authentication method not supported"
-msgstr ""
+msgstr "Método de autentificación LDAP no soportado"
 
 #: src/err-codes.h:363
 msgid "Strong(er) LDAP authentication required"
-msgstr ""
+msgstr "Se requiere una autentificación LDAP (más) fuerte"
 
 #: src/err-codes.h:364
 msgid "Partial LDAP results+referral received"
@@ -1466,7 +1466,7 @@ msgstr ""
 
 #: src/err-codes.h:366
 msgid "Administrative LDAP limit exceeded"
-msgstr ""
+msgstr "Excedido el límite administrativo de LDAP"
 
 #: src/err-codes.h:367
 msgid "Critical LDAP extension is unavailable"
@@ -1530,27 +1530,27 @@ msgstr ""
 
 #: src/err-codes.h:382
 msgid "Inappropriate LDAP authentication"
-msgstr ""
+msgstr "Autentificación LDAP inapropiada"
 
 #: src/err-codes.h:383
 msgid "Invalid LDAP credentials"
-msgstr ""
+msgstr "Credenciales LDAP no válidas"
 
 #: src/err-codes.h:384
 msgid "Insufficient access for LDAP"
-msgstr ""
+msgstr "Acceso insuficiente para LDAP"
 
 #: src/err-codes.h:385
 msgid "LDAP server is busy"
-msgstr ""
+msgstr "El servidor LDAP está ocupado"
 
 #: src/err-codes.h:386
 msgid "LDAP server is unavailable"
-msgstr ""
+msgstr "El servidor LDAP no está disponible"
 
 #: src/err-codes.h:387
 msgid "LDAP server is unwilling to perform"
-msgstr ""
+msgstr "El servidor LDAP no quiere funcionar"
 
 #: src/err-codes.h:388
 msgid "Loop detected by LDAP"
@@ -1558,11 +1558,11 @@ msgstr "Bucle detectado por LDAP"
 
 #: src/err-codes.h:389
 msgid "LDAP naming violation"
-msgstr ""
+msgstr "Violación de nombre de LDAP"
 
 #: src/err-codes.h:390
 msgid "LDAP object class violation"
-msgstr ""
+msgstr "Violación de clase de objeto de LDAP"
 
 #: src/err-codes.h:391
 msgid "LDAP operation not allowed on non-leaf"
@@ -1598,23 +1598,23 @@ msgstr "Error diferente de LDAP"
 
 #: src/err-codes.h:399
 msgid "Resources exhausted in LCUP"
-msgstr ""
+msgstr "Recursos agotados en LCUP"
 
 #: src/err-codes.h:400
 msgid "Security violation in LCUP"
-msgstr ""
+msgstr "Violación de seguridad en LCUP"
 
 #: src/err-codes.h:401
 msgid "Invalid data in LCUP"
-msgstr ""
+msgstr "Datos no válidos en LCUP"
 
 #: src/err-codes.h:402
 msgid "Unsupported scheme in LCUP"
-msgstr ""
+msgstr "Esquema no soportado en LCUP"
 
 #: src/err-codes.h:403
 msgid "Reload required in LCUP"
-msgstr ""
+msgstr "Se requiere un reload en LCUP"
 
 #: src/err-codes.h:404
 msgid "LDAP cancelled"
@@ -1622,11 +1622,11 @@ msgstr "LDAP cancelado"
 
 #: src/err-codes.h:405
 msgid "No LDAP operation to cancel"
-msgstr ""
+msgstr "Lo hay ninguna operación de LDAP que cancelar"
 
 #: src/err-codes.h:406
 msgid "Too late to cancel LDAP"
-msgstr ""
+msgstr "Demasiado tarde para cancelar LDAP"
 
 #: src/err-codes.h:407
 msgid "Cannot cancel LDAP"
@@ -1634,7 +1634,7 @@ msgstr "No se puede cancelar LDAP"
 
 #: src/err-codes.h:408
 msgid "LDAP assertion failed"
-msgstr ""
+msgstr "Falló de declaración de LDAP"
 
 #: src/err-codes.h:409
 msgid "Proxied authorization denied by LDAP"
@@ -1799,7 +1799,7 @@ msgstr "opción inválida \"%.50s\"\n"
 msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
 msgstr "Reporta los problemas encontrados en <https://bugs.gnupg.org>.\n"
 
-#: src/gpg-error.c:627
+#: src/gpg-error.c:626
 #, c-format
 msgid "warning: could not recognize %s\n"
 msgstr "advertencia: no se pudo entender %s\n"

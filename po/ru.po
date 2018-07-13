@@ -1,13 +1,13 @@
 # Russian translation for libgpg-error.
-# Copyright (C) 2015 Free Software Foundation, Inc.
+# Copyright (C) 2018 Free Software Foundation, Inc.
 # This file is distributed under the same license as the original package.
-# Ineiev <ineiev@gnu.org>, 2014, 2015
+# Ineiev <ineiev@gnu.org>, 2014, 2015, 2018
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-05-02 20:32+0200\n"
+"POT-Creation-Date: 2018-07-12 11:06+0200\n"
 "PO-Revision-Date: 2018-03-21 19:03+0100\n"
 "Last-Translator: Ineiev <ineiev@gnu.org>\n"
 "Language-Team: Russian <gnupg-ru@gnupg.org>\n"
@@ -966,29 +966,23 @@ msgstr "Плохой восьмеричный символ в S-выражени
 
 #: src/err-codes.h:242
 msgid "All subkeys are expired or revoked"
-msgstr ""
+msgstr "Все подключи просрочены или отозваны"
 
 #: src/err-codes.h:243
-#, fuzzy
-#| msgid "Data not encrypted"
 msgid "Database is corrupted"
-msgstr "Данные не зашифрованы"
+msgstr "База данных повреждена"
 
 #: src/err-codes.h:244
 msgid "Server indicated a failure"
-msgstr ""
+msgstr "Сервер указал на сбой"
 
 #: src/err-codes.h:245
-#, fuzzy
-#| msgid "Unknown name"
 msgid "No name"
-msgstr "Неизвестное имя"
+msgstr "Нет имени"
 
 #: src/err-codes.h:246
-#, fuzzy
-#| msgid "No public key"
 msgid "No key"
-msgstr "Нет открытого ключа"
+msgstr "Нет ключа"
 
 #: src/err-codes.h:247
 msgid "Legacy key"
@@ -1124,11 +1118,11 @@ msgstr "Недопустимый объект блокировки"
 
 #: src/err-codes.h:280
 msgid "True"
-msgstr ""
+msgstr "Истина"
 
 #: src/err-codes.h:281
 msgid "False"
-msgstr ""
+msgstr "Ложь"
 
 #: src/err-codes.h:282
 msgid "General IPC error"
@@ -1227,126 +1221,96 @@ msgid "Unknown IPC inquire"
 msgstr "Неизвестный запрос IPC"
 
 #: src/err-codes.h:306
-#, fuzzy
-#| msgid "No crypto engine"
 msgid "Crypto engine too old"
-msgstr "Нет криптомеханизма"
+msgstr "Криптомеханизм слишком стар"
 
 #: src/err-codes.h:307
 msgid "Screen or window too small"
-msgstr ""
+msgstr "Экран или окно слишком мало"
 
 #: src/err-codes.h:308
 msgid "Screen or window too large"
-msgstr ""
+msgstr "Экран или окно слишком велико"
 
 #: src/err-codes.h:309
 msgid "Required environment variable not set"
-msgstr ""
+msgstr "Требуемая переменная среды не установлена"
 
 #: src/err-codes.h:310
-#, fuzzy
-#| msgid "Already exists (LDAP)"
 msgid "User ID already exists"
-msgstr "Уже есть (LDAP)"
+msgstr "Идентификатор пользователя уже существует"
 
 #: src/err-codes.h:311
-#, fuzzy
-#| msgid "Already exists (LDAP)"
 msgid "Name already exists"
-msgstr "Уже есть (LDAP)"
+msgstr "Имя уже существует"
 
 #: src/err-codes.h:312
-#, fuzzy
-#| msgid "Duplicated value"
 msgid "Duplicated name"
-msgstr "Величина продублирована"
+msgstr "Имя продублировано"
 
 #: src/err-codes.h:313
-#, fuzzy
-#| msgid "Certificate too young"
 msgid "Object is too young"
-msgstr "Сертификат слишком новый"
+msgstr "Объект слишком нов"
 
 #: src/err-codes.h:314
-#, fuzzy
-#| msgid "Provided object is too short"
 msgid "Object is too old"
-msgstr "Введенный объект слишком мал"
+msgstr "Объект слишком стар"
 
 #: src/err-codes.h:315
-#, fuzzy
-#| msgid "Unknown name"
 msgid "Unknown flag"
-msgstr "Неизвестное имя"
+msgstr "Неизвестный признак"
 
 #: src/err-codes.h:316
-#, fuzzy
-#| msgid "Invalid operation code"
 msgid "Invalid execution order"
-msgstr "Недопустимый код операции"
+msgstr "Недопустимый порядок выполнения"
 
 #: src/err-codes.h:317
 msgid "Already fetched"
-msgstr ""
+msgstr "Уже доставлено"
 
 #: src/err-codes.h:318
 msgid "Try again later"
-msgstr ""
+msgstr "Повторите попытку позднее"
 
 #: src/err-codes.h:319
-#, fuzzy
-#| msgid "Unknown name"
 msgid "Wrong name"
-msgstr "Неизвестное имя"
+msgstr "Неверное имя"
 
 #: src/err-codes.h:320
 msgid "System bug detected"
-msgstr ""
+msgstr "Обнаружена ошибка в системе"
 
 #: src/err-codes.h:321
-#, fuzzy
-#| msgid "Unknown system error"
 msgid "Unknown DNS error"
-msgstr "Неизвестная системная ошибка"
+msgstr "Неизвестная ошибка DNS"
 
 #: src/err-codes.h:322
-#, fuzzy
-#| msgid "Invalid OID string"
 msgid "Invalid DNS section"
-msgstr "Недопустимая строка OID"
+msgstr "Недопустимый раздел DNS"
 
 #: src/err-codes.h:323
-#, fuzzy
-#| msgid "Invalid S-expression"
 msgid "Invalid textual address form"
-msgstr "Недопустимое S-выражение"
+msgstr "Недопустимая текстуальная форма адреса"
 
 #: src/err-codes.h:324
-#, fuzzy
-#| msgid "Missing issuer certificate"
 msgid "Missing DNS query packet"
-msgstr "Не хватает сертификата издателя"
+msgstr "Не хватает пакета запроса DNS"
 
 #: src/err-codes.h:325
 msgid "Missing DNS answer packet"
-msgstr ""
+msgstr "Не хватает ответного пакета DNS"
 
 #: src/err-codes.h:326
 msgid "Connection closed in DNS"
-msgstr ""
+msgstr "В DNS прервано соединение"
 
 #: src/err-codes.h:327
-#, fuzzy
-#| msgid "Decryption failed"
 msgid "Verification failed in DNS"
-msgstr "Сбой расшифровки"
+msgstr "Сбой проверки в DNS"
 
 #: src/err-codes.h:328
-#, fuzzy
-#| msgid "Timeout"
 msgid "DNS Timeout"
-msgstr "Лимит времени"
+msgstr "Лимит времени DNS"
 
 #: src/err-codes.h:329
 msgid "General LDAP error"
@@ -1829,9 +1793,9 @@ msgstr "недопустимый параметр \"%.50s\"\n"
 
 #: src/gpg-error.c:458
 msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
-msgstr ""
+msgstr "Об ошибках сообщайте по адресу <https://bugs.gnupg.org>.\n"
 
-#: src/gpg-error.c:627
+#: src/gpg-error.c:626
 #, c-format
 msgid "warning: could not recognize %s\n"
 msgstr "внимание: не распознано %s\n"

@@ -2,13 +2,13 @@
 # Copyright (C) 2012 Free Software Foundation, Inc.
 # This file is distributed under the same license as the libgpg-error package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2012, 2014, 2015.
+# Yuri Chornoivan <yurchor@ukr.net>, 2012, 2014, 2015, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error 1.7\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-05-02 20:32+0200\n"
-"PO-Revision-Date: 2018-03-21 19:03+0100\n"
+"POT-Creation-Date: 2018-07-12 11:06+0200\n"
+"PO-Revision-Date: 2018-04-14 21:07+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
 "Language: uk\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: src/err-sources.h:28
 msgid "Unspecified source"
@@ -968,29 +968,23 @@ msgstr "Помилковий вісімковий символ у S-виразі
 
 #: src/err-codes.h:242
 msgid "All subkeys are expired or revoked"
-msgstr ""
+msgstr "Строк дії усіх підключів вичерпано або їх відкликано"
 
 #: src/err-codes.h:243
-#, fuzzy
-#| msgid "Data not encrypted"
 msgid "Database is corrupted"
-msgstr "Дані не зашифровано"
+msgstr "Базу даних пошкоджено"
 
 #: src/err-codes.h:244
 msgid "Server indicated a failure"
-msgstr ""
+msgstr "Сервер сигналізує про помилку"
 
 #: src/err-codes.h:245
-#, fuzzy
-#| msgid "Unknown name"
 msgid "No name"
-msgstr "Невідома назва"
+msgstr "Немає назви"
 
 #: src/err-codes.h:246
-#, fuzzy
-#| msgid "No public key"
 msgid "No key"
-msgstr "Немає відкритого ключа"
+msgstr "Немає ключа"
 
 #: src/err-codes.h:247
 msgid "Legacy key"
@@ -1135,11 +1129,11 @@ msgstr "Некоректний об’єкт блокування"
 
 #: src/err-codes.h:280
 msgid "True"
-msgstr ""
+msgstr "Так"
 
 #: src/err-codes.h:281
 msgid "False"
-msgstr ""
+msgstr "Ні"
 
 #: src/err-codes.h:282
 msgid "General IPC error"
@@ -1238,126 +1232,96 @@ msgid "Unknown IPC inquire"
 msgstr "Невідомий запит IPC"
 
 #: src/err-codes.h:306
-#, fuzzy
-#| msgid "No crypto engine"
 msgid "Crypto engine too old"
-msgstr "Немає рушія шифрування"
+msgstr "Рушій шифрування є надто старим"
 
 #: src/err-codes.h:307
 msgid "Screen or window too small"
-msgstr ""
+msgstr "Екран або вікно є надто малим"
 
 #: src/err-codes.h:308
 msgid "Screen or window too large"
-msgstr ""
+msgstr "Екран або вікно є надто великим"
 
 #: src/err-codes.h:309
 msgid "Required environment variable not set"
-msgstr ""
+msgstr "Не встановлено обов'язкової змінної середовища"
 
 #: src/err-codes.h:310
-#, fuzzy
-#| msgid "Already exists (LDAP)"
 msgid "User ID already exists"
-msgstr "Вже існує (LDAP)"
+msgstr "Ідентифікатор користувача вже існує"
 
 #: src/err-codes.h:311
-#, fuzzy
-#| msgid "Already exists (LDAP)"
 msgid "Name already exists"
-msgstr "Вже існує (LDAP)"
+msgstr "Назва вже існує"
 
 #: src/err-codes.h:312
-#, fuzzy
-#| msgid "Duplicated value"
 msgid "Duplicated name"
-msgstr "Дублювання значення"
+msgstr "Дублювання назви"
 
 #: src/err-codes.h:313
-#, fuzzy
-#| msgid "Certificate too young"
 msgid "Object is too young"
-msgstr "Сертифікат є надто новим"
+msgstr "Об'єкт є надто новим"
 
 #: src/err-codes.h:314
-#, fuzzy
-#| msgid "Provided object is too short"
 msgid "Object is too old"
-msgstr "Наданий об’єкт є надто коротким"
+msgstr "Об'єкт є надто старим"
 
 #: src/err-codes.h:315
-#, fuzzy
-#| msgid "Unknown name"
 msgid "Unknown flag"
-msgstr "Невідома назва"
+msgstr "Невідомий прапорець"
 
 #: src/err-codes.h:316
-#, fuzzy
-#| msgid "Invalid operation code"
 msgid "Invalid execution order"
-msgstr "Некоректний код дії"
+msgstr "Некоректна послідовність виконання"
 
 #: src/err-codes.h:317
 msgid "Already fetched"
-msgstr ""
+msgstr "Вже отримано"
 
 #: src/err-codes.h:318
 msgid "Try again later"
-msgstr ""
+msgstr "Повторіть спробу пізніше"
 
 #: src/err-codes.h:319
-#, fuzzy
-#| msgid "Unknown name"
 msgid "Wrong name"
-msgstr "Невідома назва"
+msgstr "Помилкова назва"
 
 #: src/err-codes.h:320
 msgid "System bug detected"
-msgstr ""
+msgstr "Виявлено ваду у системі"
 
 #: src/err-codes.h:321
-#, fuzzy
-#| msgid "Unknown system error"
 msgid "Unknown DNS error"
-msgstr "Невідома системна помилка"
+msgstr "Невідома помилка DNS"
 
 #: src/err-codes.h:322
-#, fuzzy
-#| msgid "Invalid OID string"
 msgid "Invalid DNS section"
-msgstr "Некоректний рядок OID"
+msgstr "Некоректний розділ DNS"
 
 #: src/err-codes.h:323
-#, fuzzy
-#| msgid "Invalid S-expression"
 msgid "Invalid textual address form"
-msgstr "Некоректний S-вираз"
+msgstr "Некоректний текстовий формат адреси"
 
 #: src/err-codes.h:324
-#, fuzzy
-#| msgid "Missing issuer certificate"
 msgid "Missing DNS query packet"
-msgstr "Не вистачає сертифіката видавця"
+msgstr "Не вистачає пакета запиту до DNS"
 
 #: src/err-codes.h:325
 msgid "Missing DNS answer packet"
-msgstr ""
+msgstr "Не вистачає пакета із відповіддю DNS"
 
 #: src/err-codes.h:326
 msgid "Connection closed in DNS"
-msgstr ""
+msgstr "З'єднання закрито у DNS"
 
 #: src/err-codes.h:327
-#, fuzzy
-#| msgid "Decryption failed"
 msgid "Verification failed in DNS"
-msgstr "Спроба розшифрування зазнала невдачі"
+msgstr "Не пройдено перевірку на DNS"
 
 #: src/err-codes.h:328
-#, fuzzy
-#| msgid "Timeout"
 msgid "DNS Timeout"
-msgstr "Час очікування"
+msgstr "Перевищено час очікування на DNS"
 
 #: src/err-codes.h:329
 msgid "General LDAP error"
@@ -1840,32 +1804,9 @@ msgstr "некоректний параметр «%.50s»\n"
 
 #: src/gpg-error.c:458
 msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
-msgstr ""
+msgstr "Будь ласка, повідомляйте про помилки тут: <https://bugs.gnupg.org>.\n"
 
-#: src/gpg-error.c:627
+#: src/gpg-error.c:626
 #, c-format
 msgid "warning: could not recognize %s\n"
 msgstr "попередження: не вдалося розпізнати %s\n"
-
-#~ msgid "Usage: %s GPG-ERROR [...]\n"
-#~ msgstr "Користування: %s ПОМИЛКА-GPG [...]\n"
-
-#, fuzzy
-#~| msgid "Resources exhausted"
-#~ msgid "LCUP Resources exhausted"
-#~ msgstr "Вичерпано ресурси"
-
-#, fuzzy
-#~| msgid "Invalid data"
-#~ msgid "LCUP Invalid data"
-#~ msgstr "Некоректні дані"
-
-#, fuzzy
-#~| msgid "General error"
-#~ msgid "LDAP Other general error"
-#~ msgstr "Загальна помилка"
-
-#, fuzzy
-#~| msgid "dirmngr error"
-#~ msgid "Encoding error"
-#~ msgstr "Помилка dirmngr"
