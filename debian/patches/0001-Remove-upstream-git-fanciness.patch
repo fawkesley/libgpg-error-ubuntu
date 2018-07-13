@@ -14,11 +14,11 @@ beta.
  1 file changed, 5 insertions(+), 63 deletions(-)
 
 diff --git a/autogen.sh b/autogen.sh
-index 23d27f3..912f1f5 100755
+index 9b36158..3f1c381 100755
 --- a/autogen.sh
 +++ b/autogen.sh
-@@ -253,27 +253,11 @@ if [ "$myhost" = "find-version" ]; then
-     esac
+@@ -249,27 +249,11 @@ if [ "$myhost" = "find-version" ]; then
+     fi
  
      beta=no
 -    if [ -e .git ]; then
@@ -50,7 +50,7 @@ index 23d27f3..912f1f5 100755
  
      echo "$package-$vers$tmp:$beta:$ingit:$vers$tmp:$vers:$tmp:$rev:$rvd:"
      exit 0
-@@ -456,48 +440,6 @@ EOF
+@@ -452,48 +436,6 @@ EOF
      die_p
  fi
  
