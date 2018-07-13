@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error-1.17\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-05-02 20:32+0200\n"
+"POT-Creation-Date: 2018-07-12 11:06+0200\n"
 "PO-Revision-Date: 2018-03-21 18:58+0100\n"
 "Last-Translator: David Prévot <david@tilapin.org>\n"
 "Language-Team: French <traduc@traduc.org>\n"
@@ -1948,7 +1948,7 @@ msgstr "option « %.50s » incorrecte\n"
 msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
 msgstr ""
 
-#: src/gpg-error.c:627
+#: src/gpg-error.c:626
 #, c-format
 msgid "warning: could not recognize %s\n"
 msgstr "attention : impossible de reconnaître %s\n"
