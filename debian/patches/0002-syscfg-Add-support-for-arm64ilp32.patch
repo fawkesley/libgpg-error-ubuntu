@@ -1,0 +1,60 @@
+From: Wookey <wookey@debian.org>
+Date: Fri, 12 Oct 2018 09:57:23 -0400
+Subject: syscfg: Add support for arm64ilp32
+
+* src/syscfg/lock-obj-pub.riscv64-unknown-linux-gnu.h: New.
+* src/Makefile.am (lock_obj_pub): Add it.
+
+--
+
+Debian-bug-id: 869605
+Co-authored-by: Wookey <wookey@debian.org>
+Signed-off-by: Daniel Kahn Gillmor <dkg@fifthhorseman.net>
+---
+ src/Makefile.am                                    |  1 +
+ .../lock-obj-pub.aarch64-unknown-linux-gnu_ilp32.h | 24 ++++++++++++++++++++++
+ 2 files changed, 25 insertions(+)
+ create mode 100644 src/syscfg/lock-obj-pub.aarch64-unknown-linux-gnu_ilp32.h
+
+diff --git a/src/Makefile.am b/src/Makefile.am
+index 42998e4..2104b78 100644
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -45,6 +45,7 @@ endif
+ # Distributed lock object definitions for cross compilation.
+ lock_obj_pub = \
+         syscfg/lock-obj-pub.aarch64-unknown-linux-gnu.h     \
++        syscfg/lock-obj-pub.aarch64-unknown-linux-gnu_ilp32.h \
+ 	syscfg/lock-obj-pub.aarch64-apple-darwin.h          \
+         syscfg/lock-obj-pub.alpha-unknown-linux-gnu.h       \
+         syscfg/lock-obj-pub.arm-unknown-linux-androideabi.h \
+diff --git a/src/syscfg/lock-obj-pub.aarch64-unknown-linux-gnu_ilp32.h b/src/syscfg/lock-obj-pub.aarch64-unknown-linux-gnu_ilp32.h
+new file mode 100644
+index 0000000..61239c3
+--- /dev/null
++++ b/src/syscfg/lock-obj-pub.aarch64-unknown-linux-gnu_ilp32.h
+@@ -0,0 +1,24 @@
++## lock-obj-pub.aarch64-unknown-linux-gnu_ilp32.h
++## File created by gen-posix-lock-obj - DO NOT EDIT
++## To be included by mkheader into gpg-error.h
++
++typedef struct
++{
++  long _vers;
++  union {
++    volatile char _priv[32];
++    long _x_align;
++    long *_xp_align;
++  } u;
++} gpgrt_lock_t;
++
++#define GPGRT_LOCK_INITIALIZER {1,{{0,0,0,0,0,0,0,0, \
++                                    0,0,0,0,0,0,0,0, \
++                                    0,0,0,0,0,0,0,0, \
++                                    0,0,0,0,0,0,0,0}}}
++##
++## Local Variables:
++## mode: c
++## buffer-read-only: t
++## End:
++##
