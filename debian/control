@@ -43,6 +43,8 @@ Depends:
  ${shlibs:Depends},
 Pre-Depends:
  ${misc:Pre-Depends},
+Recommends:
+ libgpg-error-l10n,
 Description: GnuPG development runtime library
  Library that defines common error values, messages, and common
  runtime functionality for all GnuPG components.  Among these are GPG,
@@ -102,3 +104,23 @@ Description: library of error values and messages in GnuPG (Windows development)
  This is a Windows version of libgpg-error.  It's meant to be used
  when cross-building software that targets the Windows platform,
  e.g. the win32-loader component of Debian-Installer.
+
+Package: libgpg-error-l10n
+Architecture: all
+Section: localization
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+Replaces:
+ libgpg-error0 (<< 1.32-1.1~),
+Breaks:
+ libgpg-error0 (<< 1.32-1.1~),
+Description: library of error values and messages in GnuPG (localization files)
+ Library that defines common error values, messages, and common
+ runtime functionality for all GnuPG components.  Among these are GPG,
+ GPGSM, GPGME, GPG-Agent, libgcrypt, pinentry, SmartCard Daemon and
+ possibly more in the future.
+ .
+ It will likely be renamed "gpgrt" in the future.
+ .
+ This package contains the translation files for the use in non-English locales.
