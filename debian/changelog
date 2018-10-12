@@ -1,3 +1,17 @@
+libgpg-error (1.32-2) unstable; urgency=medium
+
+  [ Sven Joachim ]
+  * Move the translation files to a new libgpg-error-l10n package
+    (Closes: #872806)
+
+  [ Wookey ]
+  * Add support for arm64ilp32 (Closes: #869605)
+
+  [ Daniel Kahn Gillmor ]
+  * Standards-Version: bumped to 4.2.1 (no changes needed)
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Fri, 12 Oct 2018 10:04:28 -0400
+
 libgpg-error (1.32-1) unstable; urgency=medium
 
   * new upstream release
