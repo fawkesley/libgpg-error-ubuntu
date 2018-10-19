@@ -111,6 +111,8 @@ Section: localization
 Multi-Arch: foreign
 Depends:
  ${misc:Depends},
+Enhances:
+ libgpg-error0,
 Replaces:
  libgpg-error0 (<< 1.32-1.1~),
 Breaks:
