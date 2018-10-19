@@ -1,3 +1,10 @@
+libgpg-error (1.32-3) unstable; urgency=medium
+
+  * indicate that libgpg-error-l10n Enhances: libgpg-error0
+  * ship l10n files from arch-indep build (Closes: #911377)
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Fri, 19 Oct 2018 19:33:46 +0200
+
 libgpg-error (1.32-2) unstable; urgency=medium
 
   [ Sven Joachim ]
