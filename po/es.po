@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error 1.30-beta4\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-07-12 11:06+0200\n"
+"POT-Creation-Date: 2018-12-07 17:16+0100\n"
 "PO-Revision-Date: 2018-04-15 08:52+0000\n"
 "Last-Translator: Tails translators <amnesia@boum.org>\n"
 "Language-Team: es <LL@li.org>\n"
@@ -1799,7 +1799,7 @@ msgstr "opción inválida \"%.50s\"\n"
 msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
 msgstr "Reporta los problemas encontrados en <https://bugs.gnupg.org>.\n"
 
-#: src/gpg-error.c:626
+#: src/gpg-error.c:658
 #, c-format
 msgid "warning: could not recognize %s\n"
 msgstr "advertencia: no se pudo entender %s\n"

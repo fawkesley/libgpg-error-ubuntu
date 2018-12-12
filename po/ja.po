@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error 1.27\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-07-12 11:06+0200\n"
-"PO-Revision-Date: 2018-03-21 19:02+0100\n"
+"POT-Creation-Date: 2018-12-07 17:16+0100\n"
+"PO-Revision-Date: 2018-09-06 09:58+0900\n"
 "Last-Translator: NIIBE Yutaka <gniibe@fsij.org>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -1795,9 +1795,9 @@ msgstr "無効なオプション \"%.50s\"\n"
 
 #: src/gpg-error.c:458
 msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
-msgstr ""
+msgstr "バグは<https://bugs.gnupg.org>に報告してください。\n"
 
-#: src/gpg-error.c:626
+#: src/gpg-error.c:658
 #, c-format
 msgid "warning: could not recognize %s\n"
 msgstr "警告: %s を認識できませんでした\n"
