@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-07-12 11:06+0200\n"
+"POT-Creation-Date: 2018-12-07 17:16+0100\n"
 "PO-Revision-Date: 2018-03-21 19:03+0100\n"
 "Last-Translator: Ineiev <ineiev@gnu.org>\n"
 "Language-Team: Russian <gnupg-ru@gnupg.org>\n"
@@ -1795,7 +1795,7 @@ msgstr "недопустимый параметр \"%.50s\"\n"
 msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
 msgstr "Об ошибках сообщайте по адресу <https://bugs.gnupg.org>.\n"
 
-#: src/gpg-error.c:626
+#: src/gpg-error.c:658
 #, c-format
 msgid "warning: could not recognize %s\n"
 msgstr "внимание: не распознано %s\n"

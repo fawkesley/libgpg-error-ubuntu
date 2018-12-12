@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgpg-error-1.7\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2018-07-12 11:06+0200\n"
+"POT-Creation-Date: 2018-12-07 17:16+0100\n"
 "PO-Revision-Date: 2018-03-21 19:03+0100\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <(nothing)>\n"
@@ -2019,7 +2019,7 @@ msgstr "Неисправна шифра радње"
 msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
 msgstr ""
 
-#: src/gpg-error.c:626
+#: src/gpg-error.c:658
 #, c-format
 msgid "warning: could not recognize %s\n"
 msgstr "упозорење: не могу да препознам „%s“\n"
