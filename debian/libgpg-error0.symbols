@@ -31,6 +31,7 @@ libgpg-error.so.0 libgpg-error0 #MINVER#
  gpgrt_check_version@GPG_ERROR_1.0 1.14
  gpgrt_clearerr@GPG_ERROR_1.0 1.14
  gpgrt_clearerr_unlocked@GPG_ERROR_1.0 1.14
+ gpgrt_cmp_version@GPG_ERROR_1.0 1.33
  gpgrt_fclose@GPG_ERROR_1.0 1.14
  gpgrt_fclose_snatch@GPG_ERROR_1.0 1.14
  gpgrt_fdopen@GPG_ERROR_1.0 1.14
@@ -54,6 +55,8 @@ libgpg-error.so.0 libgpg-error0 #MINVER#
  gpgrt_fpopen@GPG_ERROR_1.0 1.14
  gpgrt_fpopen_nc@GPG_ERROR_1.0 1.14
  gpgrt_fprintf@GPG_ERROR_1.0 1.14
+ gpgrt_fprintf_sf@GPG_ERROR_1.0 1.33
+ gpgrt_fprintf_sf_unlocked@GPG_ERROR_1.0 1.33
  gpgrt_fprintf_unlocked@GPG_ERROR_1.0 1.14
  gpgrt_fputc@GPG_ERROR_1.0 1.14
  gpgrt_fputs@GPG_ERROR_1.0 1.14
@@ -65,6 +68,7 @@ libgpg-error.so.0 libgpg-error0 #MINVER#
  gpgrt_fseeko@GPG_ERROR_1.0 1.14
  gpgrt_ftell@GPG_ERROR_1.0 1.14
  gpgrt_ftello@GPG_ERROR_1.0 1.14
+ gpgrt_ftruncate@GPG_ERROR_1.0 1.33
  gpgrt_ftrylockfile@GPG_ERROR_1.0 1.14
  gpgrt_funlockfile@GPG_ERROR_1.0 1.14
  gpgrt_fwrite@GPG_ERROR_1.0 1.14
