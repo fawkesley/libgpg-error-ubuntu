@@ -88,6 +88,7 @@ Description: library for common error values and messages in GnuPG components
 
 Package: libgpg-error-mingw-w64-dev
 Architecture: all
+Multi-Arch: foreign
 Section: libdevel
 Depends:
  ${misc:Depends},
