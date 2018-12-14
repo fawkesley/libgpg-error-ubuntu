@@ -1,3 +1,17 @@
+libgpg-error (1.33-1) unstable; urgency=medium
+
+  * New upstream release
+  * Re-export upstream signing key without extra signatures.
+  * refresh patches
+  * ship correct manpages for gpgrt-config
+  * update symbols file
+  * add Build-Depends-Package to symbols file
+  * ship gpg-error.pc for pkg-config
+  * remember that we ship l10n files from the windows 64-bit build
+  * remember that we do not ship gpgrt-config.1 from the arch-indep builds
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Fri, 14 Dec 2018 11:04:31 -0500
+
 libgpg-error (1.32-3) unstable; urgency=medium
 
   * indicate that libgpg-error-l10n Enhances: libgpg-error0
