@@ -1,4 +1,5 @@
 libgpg-error.so.0 libgpg-error0 #MINVER#
+* Build-Depends-Package: libgpg-error-dev
  GPG_ERROR_1.0@GPG_ERROR_1.0 1.14
  _gpgrt_get_std_stream@GPG_ERROR_1.0 1.14
  _gpgrt_getc_underflow@GPG_ERROR_1.0 1.14
