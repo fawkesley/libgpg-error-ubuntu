@@ -44,7 +44,7 @@ index 9b36158..3f1c381 100755
 -    fi
 +    ingit=no
 +    beta=no
-+    tmp="-unknown"
++    tmp=""
 +    rvd="$(wc -l < debian/changelog)"
 +    rev="$(printf %07x $rvd)"
  
